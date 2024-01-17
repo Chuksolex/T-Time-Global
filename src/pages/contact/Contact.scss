@@ -1,0 +1,64 @@
+#contact {
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+      justify-content:space-around; 
+    margin: auto;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    gap: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .address {
+      //max-width: 600px ;
+    }
+
+
+    .contact-inputs{
+      max-width: 400px;
+
+    input,
+    textarea,
+    button {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  
+    textarea {
+      resize: vertical; /* Allow vertical resizing of textarea */
+    }
+  
+    button {
+      background-color: green;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  
+    .visible {
+      display: block;
+      color: green;
+      margin-top: 10px;
+    }
+    .undefined {
+        display:none;
+    }
+  
+    .error {
+      display: block;
+      color: red;
+      margin-top: 10px;
+    }
+  }
+  }
+  
