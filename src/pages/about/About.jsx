@@ -71,7 +71,7 @@ function About() {
     </div>
 
     <div>
-      <img src='./public/assets/Images/house.jpg' width={"100%"} height={"400"} alt="House" />
+      <img src='./assets/Images/house.jpg' width={"100%"} height={"400"} alt="House" />
     </div>
 
     

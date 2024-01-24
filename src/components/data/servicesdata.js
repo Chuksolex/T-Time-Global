@@ -10,7 +10,7 @@ export const servicesData = [
       Experience the T-Time difference with our meticulous approach, conducting detailed consultations to understand your unique requirements and delivering customized designs that align with your vision. We prioritize the use of high-quality materials, ensuring the longevity and reliability of every installation.
       
       Choose T-Time Nigeria Global for projects that demand reliability, safety, and efficiency. Our commitment to industry standards, timely project completion, and cost-effective solutions sets us apart. Elevate your electrical infrastructure with T-Time – where expertise meets dedication. Contact us today to embark on a journey of superior electrical installations tailored to your needs.`,
-      imgSrc: `./public/assets/Images/tools1.jpg`,
+      imgSrc: `./assets/Images/tools1.jpg`,
       
     },
     {
@@ -23,7 +23,7 @@ export const servicesData = [
       Why choose T-Time? Our commitment to reliability, safety, and efficiency sets us apart. We understand the importance of timely project completion and strive to exceed industry standards, delivering cutting-edge technology for long-term performance.
       
       Elevate your indoor experience with T-Time's air conditioning installations. Our skilled workforce, detailed consultations, and dedication to quality assurance ensure that your space is equipped with the latest in HVAC innovation. Contact T-Time Nigeria Global today to embark on a journey of unparalleled air conditioning comfort and efficiency. Your satisfaction is our priority.`,
-      imgSrc: `./public/assets/Images/airconinstall.png`,
+      imgSrc: `./assets/Images/airconinstall.png`,
     },
     {
       id: `lift-or-elevator-installation`,
@@ -35,7 +35,7 @@ export const servicesData = [
       Why choose T-Time? Our customer-centric approach involves detailed consultations to understand your requirements, allowing us to create customized designs that prioritize safety and efficiency. We use high-quality materials to guarantee the longevity and reliability of every lift installation.
       
       Trust T-Time Nigeria Global to elevate your surroundings. Our commitment to reliability, safety, and efficiency ensures that your lift installation exceeds expectations. Contact us today and step into a world where vertical mobility meets unmatched craftsmanship. Your journey to elevated living starts with T-Time.`,
-      imgSrc: `./public/assets/Images/Elevators1.jpg`,
+      imgSrc: `./assets/Images/Elevators1.jpg`,
     },
     {
       id: `refrigerator-maintenace`,
@@ -47,7 +47,7 @@ export const servicesData = [
       Why choose T-Time? Our commitment to reliability, safety, and efficiency sets us apart. We prioritize using high-quality materials and state-of-the-art techniques, ensuring that our maintenance service enhances the performance of your fridge.
       
       Experience the difference with T-Time Nigeria Global. Choose us for a hassle-free and cost-effective solution to your fridge maintenance needs. Contact us today, and let our experts ensure your refrigeration units run smoothly, preserving freshness and keeping your perishables at their best. Your satisfaction is our priority.`,
-      imgSrc: `./public/assets/Images/fridgerepair.jpg`,
+      imgSrc: `./assets/Images/fridgerepair.jpg`,
     },
     {
       id: `generator-maintenance`,
@@ -66,7 +66,7 @@ export const servicesData = [
       
       
       `,
-      imgSrc: `./public/assets/Images/gen.jpg`,
+      imgSrc: `./assets/Images/gen.jpg`,
     },
     {
       id: `painting-services`,
@@ -85,7 +85,7 @@ export const servicesData = [
       
       
       `,
-      imgSrc: `./public/assets/Images/paint.jpg`,
+      imgSrc: `./assets/Images/paint.jpg`,
     },
     
   ];

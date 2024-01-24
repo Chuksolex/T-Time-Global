@@ -37,7 +37,7 @@ As a Technical Solution Company our team of Engineering and Technicians is relia
         </div>
 
         <div className="team1-pics">
-          <img src="./public/assets/Images/team2.jpg" alt="T-time global team member at work" />
+          <img src="./assets/Images/team2.jpg" alt="T-time global team member at work" />
 
         </div>
 
@@ -49,7 +49,7 @@ As a Technical Solution Company our team of Engineering and Technicians is relia
       {/* Core Values */}
       <div className="value-section">
       <div className="team2-pics">
-          <img src="./public/assets/Images/team1.jpg" alt="T-time global team member at work" />
+          <img src="./assets/Images/team1.jpg" alt="T-time global team member at work" />
         
             
 
