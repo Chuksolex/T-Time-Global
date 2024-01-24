@@ -3,7 +3,7 @@ import HomeSlider from "../../components/slider/HomeSlider";
 import CustomButton from "../../components/customButton/CustomButton";
 import { useNavigate } from "react-router-dom";
 import "./Home.scss";
-import { testimonialData } from "../../assets/data/testimonialdata";
+import { testimonialData } from "../../components/data/testimonialdata.js";
 
 
 
@@ -21,9 +21,14 @@ export default function HomePage () {
       {/* About Section */}
       <div className="about-section">
           <div className="about-featured jumbotron my-5 container-fluid">
-            <h3 className="display-4">Welcome to T-Time Nigeria Global </h3>
-            <p className="lead">We are the leading electromechanical contractor in Nigeria providing high-quality (Mechanical, and Electrical) installation and maintenance solutions for various range of sectors, offices, and homes in the construction environment.</p>
-            <p className="lead">Services include installations and maintenance of A.C units, Lifts, Refrigerators, Generators, wiring, and other related services like painting..</p>
+            <h3 className="display-4">Our Story </h3>
+            <p className="lead">STORY
+
+T-Time Nigeria Global : is a Technical Solution Company set up to provide and render a working solution to different Establishment, Organization, Company and industry.
+Having seen and noticed some errors, mistake, delay and excuses from individuals workers, even extra expenses, then T-Time Nigeria Global stepped in to excuse any excuses in delivering quality, timely and excellent work.
+As a Technical Solution Company our team of Engineering and Technicians is reliable and ready for the work from the starting to completion, and operation.  
+</p>
+            
             
             
             <p className="lead">
@@ -32,7 +37,7 @@ export default function HomePage () {
         </div>
 
         <div className="team1-pics">
-          <img src="./src/assets/Images/team2.jpg" alt="T-time global team member at work" />
+          <img src="./public/assets/Images/team2.jpg" alt="T-time global team member at work" />
 
         </div>
 
@@ -44,7 +49,7 @@ export default function HomePage () {
       {/* Core Values */}
       <div className="value-section">
       <div className="team2-pics">
-          <img src="./src/assets/Images/team1.jpg" alt="T-time global team member at work" />
+          <img src="./public/assets/Images/team1.jpg" alt="T-time global team member at work" />
         
             
 
@@ -55,14 +60,16 @@ export default function HomePage () {
   <div className="accordion-item">
     <h2 className="accordion-header">
       <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-         Philosophy
+         Goal
       </button>
     </h2>
     <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      At T-Time Nigeria Global, safety is paramount in our philosophy. We adhere to the highest safety protocols, both for our team and our clients. This commitment extends to our installation and maintenance services, where proactive and preventive measures are prioritized.
+      Our goal is to contribute to the success of every of our client to meet their target. 
+
       </div>
     </div>
+    
   </div>
   <div className="accordion-item">
     <h2 className="accordion-header">
@@ -72,7 +79,8 @@ export default function HomePage () {
     </h2>
     <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-        <strong>Our vision </strong> is to be the most trusted, efficient and innovative electrical installation and maintenance company that ensures satisfaction of our clients and partners.
+      T-Time Nigeria Global our aim is given the best perfectly, reducing the cost and maintaining the standard.
+
       </div>
     </div>
   </div>
@@ -84,7 +92,42 @@ export default function HomePage () {
     </h2>
     <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-        <strong>Our mission </strong> is to serve our clients with a quality services designed to deliver the most advanced and cost effective electrical or mechanical installations, repair and related services in the industry. We are sure that our Clients have their interests company like to provide long-term and long lasting competive services.
+      <p style={{textAlign: "left"}}> T-Time Nigeria Global: Mission is to be a:</p>
+      <ol style={{textAlign: "left"}}>
+        <li>Solution in your Company</li>
+        <li>Success in your establishment</li>
+        <li>Standard in your services</li>
+        <li>	Adding value in your industry.</li>
+      </ol>	
+      </div>
+    </div>
+    
+  </div>
+  <div className="accordion-item">
+    <h2 className="accordion-header">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Value
+      </button>
+    </h2>
+    <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
+      T-Time Nigeria Global:  A Technical Solution Company with an experience and qualify personnel put together for Timely Solution and quality works.
+
+
+      </div>
+    </div>
+  </div>
+  <div className="accordion-item">
+    <h2 className="accordion-header">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        What We Do
+      </button>
+    </h2>
+    <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
+      We are into industrial and domestic Electrical wiring, installation of Elevator (Lift), Air Conditioner (Ac), with maintenance, we carry out repairs & services of Refrigerator (Fridge), Generator, Painting works. We also into consultancy.
+
+
       </div>
     </div>
   </div>

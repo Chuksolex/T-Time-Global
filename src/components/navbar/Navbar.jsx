@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import "./Navbar.css"
 
 function Navbar() {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <Link className="navbar-brand" to={"/"}>
-        <img src={"./src/assets/images/logo1.png"}  
+        <img src="/assets/Images/logo1.png" 
                      width="140" height="140" 
                      alt="T-Time-Nigeria-Global Logo" /> 
                 
@@ -27,27 +28,40 @@ function Navbar() {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to={"/"}>
-                Home
+                HOME
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to={"/about"}>
-                About Us
+                ABOUT US
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to={"/services"}>
-                Services
+                SERVICES
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to={"/contact"}>
-                Contact Us
+                CONTACT US
               </Link>
             </li>
+            <li className="nav-item dropdown">
+              <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PORTFOLIO
+              </Link>
+              <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <Link className="dropdown-item" to="/portfolio">GENERAL WORK PORTFOLIO</Link>
+                <Link className="dropdown-item" to={"#"}>OFFICE & BUSINESS BUILDINGS</Link>
+                <Link className="dropdown-item" to={"#"}>HOTELS</Link>
+                <Link className="dropdown-item" to={"#"}>COMMERCIAL & ENTERTAINMENT CENTERS</Link>
+                <Link className="dropdown-item" to={"#"}>HOSPITALS</Link>
+                <Link className="dropdown-item" to={"#"}>OTHER PROJECTS</Link>
+              </div>
+            </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to={"/portfolio"}>
-                Portfolio
+              <Link className="nav-link active" aria-current="page" to={"/contact"}>
+                CLIENTS & PARTNERS
               </Link>
             </li>
             

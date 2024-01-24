@@ -1,6 +1,6 @@
 // ServicesPage.js
 
-import { portfolioData } from '../../assets/data/portfoliodata.js';
+import { portfolioData } from '../../components/data/portfoliodata.js';
 
 
 

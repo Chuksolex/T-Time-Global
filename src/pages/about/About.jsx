@@ -2,6 +2,10 @@ import "./About.scss";
 
 
 
+
+
+
+
 function About() {
 
 
@@ -67,10 +71,10 @@ function About() {
     </div>
 
     <div>
-      <img src=".\src\assets\Images\house.jpg" width={"100%"} height={"400"}></img>
+      <img src='./public/assets/Images/house.jpg' width={"100%"} height={"400"} alt="House" />
     </div>
 
-    (
+    
     <div>
       <h2>Welcome to T-Time Nigeria Global!</h2>
 
@@ -131,4 +135,22 @@ function About() {
 }
 
 export default About;
+
+
+
+// BOARD MEMBERS
+// Elder Engr. Aniefiok Tom 
+
+// (Acting Chairman)
+
+// Tom Nsikan
+// (Technical Manager)
+
+// Pst. E.E Okon 
+// (Human Resource)
+
+// Gift Mathew 
+// (Secretary) 
+
+
 

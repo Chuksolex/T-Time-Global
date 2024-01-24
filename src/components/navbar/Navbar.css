@@ -1,0 +1,11 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-link{
+    color: green;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: green;
+}
