@@ -12,13 +12,13 @@ export const portfolioData = [
     {
       id: 2,
       title: `Vinpy Hotel Uyo: Installation of Elevator (Lift)`,
-      description: `Successful installation of elevator system At Vinpy Hotel in partnership with Olat Grow Ventures...`,
+      description: `Successful installation of elevator system At Vinpy Hotel with Olat Grow Ventures...`,
 
       imgSrc: `./assets/Images/vimpy.jpg`,
     },
     {
       id: 3 ,
-      title: `Four-Points by Sheraton Ikot Ekpene: Electrical and Aircondition Installation Works.`,
+      title: `Four-Points by Sheraton Ikot Ekpene: Electrical, Aircondition, & Elevator Works.`,
       description: `Electrical, Air-condition and Elevator works with Ronesans Nigeria Construction Ltd. Uyo`,
 
       imgSrc: `./assets/Images/four-points.jpg`,
@@ -33,7 +33,7 @@ export const portfolioData = [
     {
       id: 5,
       title: 'Heavy-Duty Generator Maintenance & Servicing',
-      description: `Maintained more that 100 heavy duty generators such as listers, medium sized generators, etc.`,     
+      description: `Servicing and repairs of more that 100 heavy duty generators such as listers, medium sized generators, etc.`,     
       imgSrc: `./assets/Images/lister.jpg`,
     },
     {
