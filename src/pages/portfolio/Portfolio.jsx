@@ -1,6 +1,7 @@
 // ServicesPage.js
 
 import { portfolioData } from '../../components/data/portfoliodata.js';
+import { porfolioWorkInProgress } from '../../components/data/portfolio-work-in-progress.js';
 
 
 
@@ -29,7 +30,30 @@ const Portfolio = () => {
               />
               <div className="card-body">
                 <h5 className="card-title">{singlePortfolio.title}</h5>
-                <p className="card-text">{truncateText(singlePortfolio.description, 70)}</p>
+                <p className="card-text">{truncateText(singlePortfolio.description, 100)}</p>
+               
+               
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+
+      <h2 className="text-center mb-4">Work In Progress</h2>
+      <div className="row">
+        {porfolioWorkInProgress.map(single => (
+          <div key={single.id} className="col-md-4 mb-4">
+            <div className="card">
+              <img
+                src={single.imgSrc}
+                className="card-img-top"
+                alt={single.title}
+                style={{ maxHeight: '200px', objectFit: 'cover' }}
+              />
+              <div className="card-body">
+                <h5 className="card-title">{single.title}</h5>
+                <p className="card-text">{truncateText(single.description, 150)}</p>
                
                
               </div>

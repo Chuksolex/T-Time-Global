@@ -30,12 +30,12 @@ export default function SimpleSlider() {
     <Slider {...settings}>
       
       <div className="image-slider">
-              <h1 className="header">Installation & Repairs</h1>
+              <h1 className="header">Installation Works</h1>
               <img src="/assets/Images/airconditionrepair.jpg"  />
               <button className="quotebutton " onClick={goToContact}>Get Quote</button>
       </div>
       <div className="image-slider">
-      <h2 className="header">Airconditioner Installations</h2>
+      <h2 className="header">Aircondition Installations & Repairs</h2>
               <img src="/assets/Images/airconinstall.png"  />
               <button className="quotebutton" onClick={goToContact}>Get Quote</button>
       </div>
@@ -53,7 +53,7 @@ export default function SimpleSlider() {
               <button className="quotebutton" onClick={goToContact}>Get Quote</button>
       </div>
       <div className="image-slider">
-      <h2 className="header">Maintenance of Refrigerators</h2>
+      <h2 className="header">Maintenance & Repairs of Refrigerators</h2>
 
               <img src="/assets/Images/fridgerepair.jpg"  />
               <button className="quotebutton" onClick={goToContact}>Get Quote</button>
@@ -66,15 +66,15 @@ export default function SimpleSlider() {
               <button className="quotebutton" onClick={goToContact}>Get Quote</button>
       </div>
       <div className="image-slider">
-      <h2 className="header">Generator Repairs</h2>
+      <h2 className="header">Generator Repairs & Servicing</h2>
 
-              <img src="/assets/Images/tools1.jpg" />
+              <img src="/assets/Images/lister1.jpg" />
               <button className="quotebutton" onClick={goToContact}>Get Quote</button>
       </div>
       <div className="image-slider">
-      <h2 className="header">Paint Work</h2>
+      <h2 className="header">Painting Works</h2>
 
-              <img src="/assets/Images/tools1.jpg" />
+              <img src="/assets/Images/paint.jpg" />
               <button className="quotebutton" onClick={goToContact}>Get Quote</button>
       </div>
      

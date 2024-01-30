@@ -47,12 +47,12 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <Link className="nav-link dropdown-toggle" to={"/portfolio"} id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 PORTFOLIO
               </Link>
               <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <Link className="dropdown-item" to="/portfolio">GENERAL WORK PORTFOLIO</Link>
-                <Link className="dropdown-item" to={"#"}>OFFICE & BUSINESS BUILDINGS</Link>
+                <Link className="dropdown-item" disabled to={"#"}>OFFICE & BUSINESS BUILDINGS</Link>
                 <Link className="dropdown-item" to={"#"}>HOTELS</Link>
                 <Link className="dropdown-item" to={"#"}>COMMERCIAL & ENTERTAINMENT CENTERS</Link>
                 <Link className="dropdown-item" to={"#"}>HOSPITALS</Link>

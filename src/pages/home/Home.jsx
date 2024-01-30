@@ -24,9 +24,7 @@ export default function HomePage () {
             <h3 className="display-4">Our Story </h3>
             <p className="lead">STORY
 
-T-Time Nigeria Global : is a Technical Solution Company set up to provide and render a working solution to different Establishment, Organization, Company and industry.
-Having seen and noticed some errors, mistake, delay and excuses from individuals workers, even extra expenses, then T-Time Nigeria Global stepped in to excuse any excuses in delivering quality, timely and excellent work.
-As a Technical Solution Company our team of Engineering and Technicians is reliable and ready for the work from the starting to completion, and operation.  
+            STORY T-Time Nigeria Global : is a Technical Solution Company set up to provide and render a working solution to different Establishment, Organization, Company and industry. To avoid mistakes, errors, delays, and excuses from individual workers, even extra expenses, then T-Time Nigeria Global is here to excuse any excuses in delivering quality, timely and excellent work. As a Technical Solution Company our team of Engineering and Technicians is reliable and ready for the work from the starting to completion, and operation.  
 </p>
             
             
@@ -103,6 +101,22 @@ As a Technical Solution Company our team of Engineering and Technicians is relia
     </div>
     
   </div>
+  
+  <div className="accordion-item">
+    <h2 className="accordion-header">
+      <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         Purpose
+      </button>
+    </h2>
+    <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div className="accordion-body">
+      T-Time Nigeria Global: we are answerable to technical works with better finishing, making it perfect, also putting it in place for better services.
+ 
+
+      </div>
+    </div>
+    
+  </div>
   <div className="accordion-item">
     <h2 className="accordion-header">
       <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -125,7 +139,7 @@ As a Technical Solution Company our team of Engineering and Technicians is relia
     </h2>
     <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      We are into industrial and domestic Electrical wiring, installation of Elevator (Lift), Air Conditioner (Ac), with maintenance, we carry out repairs & services of Refrigerator (Fridge), Generator, Painting works. We also into consultancy.
+      We are into industrial and domestic Electrical wiring, installation of Elevator (Lift), Air Conditioner (Ac), with maintenance, we carry out repairs & services of Refrigerator (Fridge), Generator, and Painting works. We are also into Consultancy.
 
 
       </div>

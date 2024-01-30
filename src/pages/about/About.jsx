@@ -23,7 +23,7 @@ function About() {
     </h1>
     <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      T-Time Nigeria Global is a technical company registered under the CAC with registration number RC 7247098, located at Plot 46 Federal Housing Estate. Uyo. Akwa Ibom State Nigeria. It specializes in the installation and maintenance of Lifts (elevators), Air-conditioners A.C., Refrigerators, Generators, Electrical Wiring including House painting.
+      T-Time Nigeria Global is a technical company registered under the CAC with registration number RC 7247098, located at Plot 46 Federal Housing Estate. Uyo. Akwa Ibom State Nigeria. It specializes in the installation and maintenance of Lifts (elevators), Air-conditioners A.C., Refrigerators, Generators, Electrical Wiring including House painting, and Consultancy.
       </div>
     </div>
   </div>
@@ -82,35 +82,11 @@ function About() {
         At T-Time Nigeria Global, we pride ourselves on being a leading force in the field
         of comprehensive electrical installations, elevating your experiences, and maintaining
         the heartbeat of your spaces. With a commitment to excellence and a passion for
-        precision, we bring forth a wealth of expertise in electrical installations, lift
-        and elevator solutions, electrical equipment deployment, air conditioning systems,
-        and meticulous maintenance services.
+        precision, we bring forth a wealth of expertise in electrical installations,elevator (lift), air conditioning systems (A.C.), refrigerator (fridge), generator, and painting works.
       </p>
 
-      <h3>Our Core Services:</h3>
-
-      <ol>
-        <li>
-          <strong>Electrical Installations:</strong> Our skilled technicians specialize
-          in delivering top-notch electrical installations that cater to both residential
-          and commercial needs. From wiring solutions to power distribution systems, we ensure
-          your space is powered with reliability and safety.
-        </li>
-
-        {/* Add similar list items for other core services */}
-      </ol>
-
-      <h3>Additional Services:</h3>
-
-      <ul>
-        <li>
-          <strong>Painting and Related Works:</strong> Enhance the aesthetic appeal of your
-          spaces with our comprehensive painting and related services. From surface preparation
-          to finishing touches, our skilled craftsmen bring creativity and precision to every project.
-        </li>
-
-        {/* Add similar list items for other additional services */}
-      </ul>
+      
+      
 
       <p>
         At T-Time Nigeria Global, we envision a world where every space is a testament to

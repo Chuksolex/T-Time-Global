@@ -2,46 +2,46 @@
 export const portfolioData = [
     {
       id: 1,
-      title: 'A.C. Installation (Tropican) Uyo',
-      description: `Undertook bulk installation service at Uyo's largest mall: Tropican`,
-      imgSrc: `./assets/Images/tropicana.jpg`,
+      title: 'Tropica Mall Uyo: Electrical & Air-Conditional Works',
+      description: `With Nairda Nig. Ltd. carried out bulk installation service at Uyo's largest mall, Tropica`,
+      imgSrc: `./assets/Images/Tropicana-img.jpg`,
     
 
       
     },
     {
       id: 2,
-      title: `Installation of Vinpy Hotel's Lift`,
-      description: `Our expertise got us the Vimpy deal where we handled the hotel's elevator installation and other services.`,
+      title: `Vinpy Hotel Uyo: Installation of Elevator (Lift)`,
+      description: `Successful installation of elevator system At Vinpy Hotel in partnership with Olat Grow Ventures...`,
 
       imgSrc: `./assets/Images/vimpy.jpg`,
     },
     {
       id: 3 ,
-      title: `Akwa Ibom State Anex Building Supply`,
-      description: `Supplied building materials and undertook some of the projects`,
+      title: `Four-Points by Sheraton Ikot Ekpene: Electrical and Aircondition Installation Works.`,
+      description: `Electrical, Air-condition and Elevator works with Ronesans Nigeria Construction Ltd. Uyo`,
 
-      imgSrc: `./assets/Images/akwaibomanex.jpg`,
+      imgSrc: `./assets/Images/four-points.jpg`,
     },
     {
       id: 4,
-      title: 'Refrigerator Maintenance',
-      description: `Home servicing of refrigeration units, more than 60 homes trust us`,
+      title: 'Refrigerator Maintenance & Repairs',
+      description: `Home servicing of refrigeration units, more than 150 homes trust us with their cooling systems... `,
 
       imgSrc: `./assets/Images/fridgerepair.jpg`,
     },
     {
       id: 5,
-      title: 'Generator Maintenance',
-      description: `Maintained more that 100 heavy duty gens., listers, medium sized generators,`,     
-      imgSrc: `./assets/Images/gen.jpg`,
+      title: 'Heavy-Duty Generator Maintenance & Servicing',
+      description: `Maintained more that 100 heavy duty generators such as listers, medium sized generators, etc.`,     
+      imgSrc: `./assets/Images/lister.jpg`,
     },
     {
       id: 6,
-      title: 'Painting Services',
-      description: `Our company has handled Professional painting for government of Akwa Ibom, and more than 30 companies in Nigeria`,    
+      title: 'Painting Services & Beautification Works',
+      description: `Our company has handled Professional painting for governments, companies, both residential and office buildings in Nigeria....kdkdkdkdkdkdkdkdddk`,    
       imgSrc: `./assets/Images/paint.jpg`,
-    },
+    }
     
   ];
   
