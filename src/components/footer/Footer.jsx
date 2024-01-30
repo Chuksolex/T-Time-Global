@@ -25,7 +25,7 @@ const Footer = () => {
           >
             <span className="fw-1 fs-6">© 2024 Copyright: </span>
             <Link className="text-success fw-1 fs-6" to="/http://localhost:5173"
-            > T-timenigeriaglobal.com.ng</Link>
+            > <span className="fs-6"><span className="text-danger fs-6">T-time</span>nigeriaglobal.com.ng</span></Link>
           </div>
 
           <div  className="text-center p-3"><span className="fw-1 fs-6">Web-developer: </span>
