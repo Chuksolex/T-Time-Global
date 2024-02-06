@@ -1,4 +1,5 @@
 import "./About.scss";
+import { teamData } from "../../components/data/teamdata";
 
 
 
@@ -7,6 +8,12 @@ import "./About.scss";
 
 
 function About() {
+  function truncateText(text, maxLength) {
+    if (text.length <= maxLength) {
+      return text;
+    }
+    return text.slice(0, maxLength) + '...';
+  }
 
 
 
@@ -48,7 +55,9 @@ function About() {
     </h2>
     <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-        <strong>Our vision </strong> is to be the most trusted, efficient and innovative electrical installation and maintenance company that ensures satisfaction of our clients and partners.
+      T-Time Nigeria Global our aim is given the best perfectly, reducing the cost and maintaining the standard.
+
+
       </div>
     </div>
   </div>
@@ -70,19 +79,16 @@ function About() {
 
     </div>
 
-    <div>
-      <img src='./assets/Images/house.jpg' width={"100%"} height={"400"} alt="House" />
-    </div>
-
+   
     
     <div>
       <h2>Welcome to T-Time Nigeria Global!</h2>
 
       <p>
-        At T-Time Nigeria Global, we pride ourselves on being a leading force in the field
+        At T-Time Nigeria Global, we are in the field
         of comprehensive electrical installations, elevating your experiences, and maintaining
         the heartbeat of your spaces. With a commitment to excellence and a passion for
-        precision, we bring forth a wealth of expertise in electrical installations,elevator (lift), air conditioning systems (A.C.), refrigerator (fridge), generator, and painting works.
+        precision, we bring forth a wealth of expertise in electrical installations, elevator(lift), air conditioning systems (A.C.), refrigerator(fridge), generator, and painting works.
       </p>
 
       
@@ -105,6 +111,56 @@ function About() {
         Elevate your expectations; choose T-Time Nigeria Global for unparalleled electrical solutions.
       </p>
     </div>
+
+    <h2 className="text-center mb-4 mt-4">Our Team Members</h2>
+    <div className="row mt-4">
+  {teamData.map(single => (
+    <div key={single.id} className="col-md-3 mb-4">
+      <div className="d-flex flex-column align-items-center">
+        <img
+          src={single.imgSrc}
+          className="mb-2" // Add margin-bottom to create space between image and text
+          alt={single.title}
+          style={{ height: '200px', width: "200px", objectFit: "fill", borderRadius: "100%" }}
+        />
+        <div className="text-center"> {/* Center align text */}
+          <h5 className="pb-0 mb-0">{single.title}</h5>
+          <p className="pt-0 pb-4">{truncateText(single.description, 150)}</p>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+<hr/>
+<div className="row mt-4">
+ 
+    <div  className="col-md-4 mb-4">
+      
+      
+        
+          <h5 className="c">Our Address</h5>
+          <p className="">No. 64 Federal Housing Estate Uyo. Akwa Ibom State. Nigeria</p>
+      
+    </div>
+    <div  className="col-md-4 mb-4">
+      
+      
+        
+      <h5 className="c">Call an Expert</h5>
+      <p className="">08022458238</p>
+  
+</div>
+<div  className="col-md-4 mb-4">
+      
+      
+        
+      <h5 className="c">Email Us:</h5>
+      <p className="">t.timenigeriaglobal@gmail.com</p>
+  
+</div>
+
+</div>
+
     
     </div>
   );

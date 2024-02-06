@@ -31,6 +31,10 @@
   }
 }
 
+.value-section .team2-pics img {
+  max-height: 600px;
+}
+
 // SalesCopy.scss
 .chooseus{
   background-color: rgb(196, 212, 196);
@@ -75,7 +79,7 @@
 
   .about-featured {
     width: 100%;
-
+    
   }
 
   .team1-pics {
@@ -83,7 +87,7 @@
 
     img {
       width: 100%;  // Make the image fill the container
-      height: 300px;
+      //height: 300px;
       border-radius: 8px;  // Add some border-radius for styling
     }
   }
@@ -118,14 +122,43 @@
     flex: 1;  // Take up available space
     max-width: 600px;  // Set a maximum width for the first column
     padding-right: 20px;  // Add some spacing between the columns
+     
+  //   .accordion {
+  //     border: 2px solid #dc3545;
+  //     /* You can adjust the border width and color to suit your design */
+  // }
+  .accordion .accordion-content {
+    /* Styles for the content of each accordion item */
+          border: 2px solid #dc3545;
 
-    // .accordion-button {
-    //   background-color: green;
-    //   color: white;
-    // }
+}
+.accordion .accordion-header {
+  box-shadow: none; /* Removes the box-shadow from the accordion header */
+}
 
-    
+/* Target the accordion content to remove box-shadow */
+.accordion .accordion-content {
+  box-shadow: none; /* Removes the box-shadow from the accordion content */
+}
 
+    .accordion-button{
+      background-color: white;
+      border-color: #dc3545;
+
+    }
+    .accordion-item {
+      border-color: #dc3545;
+    }
+    .accordion-header{
+      border-color: #dc3545;
+
+    }
+    .accordion-button:not(.collapsed){
+      border-color: red;
+      
+
+    }
+   
     h3 {
       font-size: 2.5rem;
     }

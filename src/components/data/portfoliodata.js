@@ -26,7 +26,7 @@ export const portfolioData = [
     {
       id: 4,
       title: 'Refrigerator Maintenance & Repairs',
-      description: `Home servicing of refrigeration units, more than 150 homes trust us with their cooling systems... `,
+      description: `Home servicing of refrigeration units, more than 450 homes trust us with their cooling systems... `,
 
       imgSrc: `./assets/Images/fridgerepair.jpg`,
     },

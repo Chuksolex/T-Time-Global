@@ -28,11 +28,11 @@ export const servicesData = [
     {
       id: `lift-or-elevator-installation`,
       title: 'Lift (Elevator) Installation',
-      description: `Experience a new level of convenience and efficiency with T-Time Nigeria Global's lift (elevator) installation service. Elevate your space, whether residential or commercial, with our expertly crafted vertical mobility solutions. At T-Time, we pride ourselves on delivering installations that seamlessly integrate into your environment, offering not just a lift but a pathway to enhanced accessibility.
+      description: `Experience a new level of convenience and efficiency with T-Time Nigeria Global's lift (elevator) installation service. Elevate your space, we partner with a reliable company to give you a well deserved or customized lift with accurate installation, excellent commissioning, and satified test running to enhanced accessibility.
 
-      Our skilled team ensures that every lift installation aligns with your specific needs, emphasizing safety, reliability, and adherence to industry standards. For residential buildings, we design lifts that blend seamlessly with your architecture, providing smooth and reliable vertical transportation. In commercial settings, our elevators are tailored for efficiency, ensuring optimal flow within your premises.
+      Our skilled team ensures that every lift installation aligns with your specific needs, emphasizing safety, reliability, and adherence to industry standards. For businesses, companies, and establishment, we install lifts that blend seamlessly with your architecture, providing smooth and reliable vertical transportation. In commercial settings, our elevators are tailored for efficiency, ensuring optimal flow within your premises.
       
-      Why choose T-Time? Our customer-centric approach involves detailed consultations to understand your requirements, allowing us to create customized designs that prioritize safety and efficiency. We use high-quality materials to guarantee the longevity and reliability of every lift installation.
+      Why choose T-Time? Our customer-centric approach involves detailed consultations to understand your requirements.
       
       Trust T-Time Nigeria Global to elevate your surroundings. Our commitment to reliability, safety, and efficiency ensures that your lift installation exceeds expectations. Contact us today and step into a world where vertical mobility meets unmatched craftsmanship. Your journey to elevated living starts with T-Time.`,
       imgSrc: `./assets/Images/Elevators1.jpg`,
@@ -66,7 +66,7 @@ export const servicesData = [
       
       
       `,
-      imgSrc: `./assets/Images/gen.jpg`,
+      imgSrc: `./assets/Images/lister.jpg`,
     },
     {
       id: `painting-services`,

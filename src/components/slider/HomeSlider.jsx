@@ -21,7 +21,7 @@ export default function SimpleSlider() {
     slidesToShow: 1,
     //slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     fade: true,
     //variableWidth: true,
     adaptiveHeight: true
@@ -29,11 +29,7 @@ export default function SimpleSlider() {
   return (
     <Slider {...settings}>
       
-      <div className="image-slider">
-              <h1 className="header">Installation Works</h1>
-              <img src="/assets/Images/airconditionrepair.jpg"  />
-              <button className="quotebutton " onClick={goToContact}>Get Quote</button>
-      </div>
+     
       <div className="image-slider">
       <h2 className="header">Aircondition Installations & Repairs</h2>
               <img src="/assets/Images/airconinstall.png"  />

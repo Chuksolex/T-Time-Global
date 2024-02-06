@@ -22,9 +22,7 @@ export default function HomePage () {
       <div className="about-section">
           <div className="about-featured jumbotron my-5 container-fluid">
             <h3 className="display-4">Our Story </h3>
-            <p className="lead">STORY
-
-            STORY T-Time Nigeria Global : is a Technical Solution Company set up to provide and render a working solution to different Establishment, Organization, Company and industry. To avoid mistakes, errors, delays, and excuses from individual workers, even extra expenses, then T-Time Nigeria Global is here to excuse any excuses in delivering quality, timely and excellent work. As a Technical Solution Company our team of Engineering and Technicians is reliable and ready for the work from the starting to completion, and operation.  
+            <p className="lead"> T-Time Nigeria Global : is a Technical Solution Company set up to provide and render a working solution to different Establishment, Organization, Company and industry. For every success is a matter of time and we are Time so we are very optimistic with our potential. To avoid mistakes, errors, delays, and excuses from individual workers, even extra  expenses, then T-Time Nigeria Global is here to excuse any excuses in delivering quality, timely and excellent work. It is bound to be a challenge, so we target it on time. Our team of Engineers and Technicians are reliable and ready for the work from the starting to completion, and operation.  
 </p>
             
             
@@ -35,7 +33,7 @@ export default function HomePage () {
         </div>
 
         <div className="team1-pics">
-          <img src="./assets/Images/team2.jpg" alt="T-time global team member at work" />
+          <img src="./assets/Images/reception.png" alt="T-time global team member at work" />
 
         </div>
 
@@ -47,7 +45,7 @@ export default function HomePage () {
       {/* Core Values */}
       <div className="value-section">
       <div className="team2-pics">
-          <img src="./assets/Images/team1.jpg" alt="T-time global team member at work" />
+          <img src="./assets/Images/fieldtechnician.jpg" alt="T-time global team member at work" />
         
             
 
@@ -56,14 +54,14 @@ export default function HomePage () {
         <h3 className="text-center mb-4">Company Ethos</h3>
       <div className="accordion" id="accordionExample">
   <div className="accordion-item">
-    <h2 className="accordion-header">
+    <h2 className="accordion-header ">
       <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
          Goal
       </button>
     </h2>
     <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      Our goal is to contribute to the success of every of our client to meet their target. 
+      Our goal is to contribute to the success of every of our client to meet their target. Every contract undertaken by T-Time we shoulder the responsibility and give out the solution on time.
 
       </div>
     </div>
@@ -91,12 +89,11 @@ export default function HomePage () {
     <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
       <p style={{textAlign: "left"}}> T-Time Nigeria Global: Mission is to be a:</p>
-      <ol style={{textAlign: "left"}}>
-        <li>Solution in your Company</li>
-        <li>Success in your establishment</li>
-        <li>Standard in your services</li>
-        <li>	Adding value in your industry.</li>
-      </ol>	
+        <p>‥Solution in your Company </p>
+        <p>‥Success in your establishment</p>
+        <p>‥Standard in your services</p>
+        <p>‥Adding value in your industry.</p>
+         
       </div>
     </div>
     
@@ -125,7 +122,7 @@ export default function HomePage () {
     </h2>
     <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      T-Time Nigeria Global:  A Technical Solution Company with an experience and qualify personnel put together for Timely Solution and quality works.
+      T-Time Nigeria Global:  We are zero excuses company with an experience and qualify personnel put together for Timely Solution and quality works.
 
 
       </div>
