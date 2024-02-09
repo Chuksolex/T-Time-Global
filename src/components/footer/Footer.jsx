@@ -28,9 +28,9 @@ const Footer = () => {
             > <span className="fs-6"><span className="text-danger fs-6">T-time</span>nigeriaglobal.com.ng</span></Link>
           </div>
 
-          <div  className="text-center p-3"><span className="fw-1 fs-6">Web-developer: </span>
-            <Link className="text-success fw-1 fs-6" to="https://ng.linkedin.com/in/chukwuma-oleka" target="_blank"
-            > Chuk.O.</Link>
+          <div  className="text-center p-3"><span className="fw-6 fs-6">Web-developer: </span>
+            <Link to="https://ng.linkedin.com/in/chukwuma-oleka" target="_blank"
+            > <span className="text-success fw-6 fs-6" >Chuk.O.</span></Link>
           </div>
           {/* <!-- Copyright --> */}
         </footer>

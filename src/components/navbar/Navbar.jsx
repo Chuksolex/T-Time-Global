@@ -60,7 +60,7 @@ function Navbar() {
               </div>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to={"/contact"}>
+              <Link className="nav-link active" aria-current="page" to={"#"}>
                 CLIENTS & PARTNERS
               </Link>
             </li>

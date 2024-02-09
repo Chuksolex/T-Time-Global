@@ -72,10 +72,10 @@ function Contact() {
                     <strong> <h2>Office Address:</h2></strong> Plot 46 Federal Housing Estate, Uyo. Nigeria
                   </p>
                   <p>
-                    <strong>Call:</strong> 08022458238.
+                    <strong><i className="bi bi-telephone-forward-fill mx-2 fs-6" style={{color: "red"}}></i></strong> 08022458238.
                   </p>
                   <p>
-                    <strong>Email:</strong> t.timenigeriaglobal@gmail.com
+                    <strong><i className="bi bi-envelope-check mx-2 fs-6" style={{color: "red"}}></i></strong> t.timenigeriaglobal@gmail.com
                   </p>
                 </div>
                 <iframe
@@ -116,7 +116,7 @@ function Contact() {
                     value={message}
                     onChange={e => setMessage(e.target.value)}
                 ></textarea>
-                <button onClick={submit}>Send Message</button>
+                <button onClick={submit}> <i className="bi bi-envelope-check mx-2 fs-6" style={{color: "white"}}></i>Send Message</button>
                 {emailError && <span className="error">{emailError}</span>}
                 <span className={emailSent ? 'visible' : "undefined"}>
                     Thank you for your message, we will be in touch in no time!

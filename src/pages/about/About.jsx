@@ -21,7 +21,7 @@ function About() {
   
   return (
     <div className="about container">
-        <div className="accordion accordion-flush my-4" id="accordionFlushExample">
+        <div className="accordion w-75 mx-auto my-4" id="accordionFlushExample">
         <div className="accordion-item">
     <h1 className="accordion-header">
       <button className="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -81,10 +81,10 @@ function About() {
 
    
     
-    <div>
+    <div className="about-message">
       <h2>Welcome to T-Time Nigeria Global!</h2>
 
-      <p>
+      <p className="">
         At T-Time Nigeria Global, we are in the field
         of comprehensive electrical installations, elevating your experiences, and maintaining
         the heartbeat of your spaces. With a commitment to excellence and a passion for
@@ -101,7 +101,7 @@ function About() {
         the test of time.
       </p>
 
-      <p>
+      <p className="">
         Experience excellence, reliability, and innovation with T-Time Nigeria Global -
         where every installation is a masterpiece and every maintenance service is a commitment
         to your satisfaction.
@@ -113,6 +113,8 @@ function About() {
     </div>
 
     <h2 className="text-center mb-4 mt-4">Our Team Members</h2>
+    <hr/>
+
     <div className="row mt-4">
   {teamData.map(single => (
     <div key={single.id} className="col-md-3 mb-4">
@@ -139,15 +141,15 @@ function About() {
       
         
           <h5 className="c">Our Address</h5>
-          <p className="">No. 64 Federal Housing Estate Uyo. Akwa Ibom State. Nigeria</p>
+          <p className=""><i className="bi bi-geo-alt mx-2 fs-6" style={{color: "red"}}></i>No. 64 Federal Housing Estate Uyo. Akwa Ibom State. Nigeria</p>
       
     </div>
     <div  className="col-md-4 mb-4">
       
       
         
-      <h5 className="c">Call an Expert</h5>
-      <p className="">08022458238</p>
+      <h5 className="c">Call an Expert:</h5>
+      <p className=""><i className="bi bi-telephone-forward-fill mx-2 fs-6" style={{color: "red"}}></i>08022458238</p>
   
 </div>
 <div  className="col-md-4 mb-4">
@@ -155,7 +157,8 @@ function About() {
       
         
       <h5 className="c">Email Us:</h5>
-      <p className="">t.timenigeriaglobal@gmail.com</p>
+      <p className=""><i className="bi bi-envelope-check mx-2 fs-6" style={{color: "red"}}></i>
+t.timenigeriaglobal@gmail.com</p>
   
 </div>
 

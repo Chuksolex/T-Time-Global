@@ -32,7 +32,7 @@ export default function SimpleSlider() {
      
       <div className="image-slider">
       <h2 className="header">Aircondition Installations & Repairs</h2>
-              <img src="/assets/Images/airconinstall.png"  />
+              <img src="/assets/Images/menup.jpg"  />
               <button className="quotebutton" onClick={goToContact}>Get Quote</button>
       </div>
       <div className="image-slider">

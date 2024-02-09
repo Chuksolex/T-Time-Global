@@ -22,8 +22,12 @@ export default function HomePage () {
       <div className="about-section">
           <div className="about-featured jumbotron my-5 container-fluid">
             <h3 className="display-4">Our Story </h3>
-            <p className="lead"> T-Time Nigeria Global : is a Technical Solution Company set up to provide and render a working solution to different Establishment, Organization, Company and industry. For every success is a matter of time and we are Time so we are very optimistic with our potential. To avoid mistakes, errors, delays, and excuses from individual workers, even extra  expenses, then T-Time Nigeria Global is here to excuse any excuses in delivering quality, timely and excellent work. It is bound to be a challenge, so we target it on time. Our team of Engineers and Technicians are reliable and ready for the work from the starting to completion, and operation.  
-</p>
+            <p className="lead "> T-Time Nigeria Global : is a Technical Solution Company set up to provide 
+                and render a working solution to different Establishment, Organization, Company and industry.
+                 For every success is a matter of time and we are Time so we are very optimistic with our 
+                 potential. To avoid mistakes, errors, delays, and excuses from individual workers, even 
+                 extra  expenses, then T-Time Nigeria Global is here to excuse any excuses in delivering quality, timely and excellent work. It is bound to be a challenge, so we target it on time. Our team of Engineers and Technicians are reliable and ready for the work from the starting to completion, and operation.  
+            </p>
             
             
             
@@ -45,14 +49,14 @@ export default function HomePage () {
       {/* Core Values */}
       <div className="value-section">
       <div className="team2-pics">
-          <img src="./assets/Images/fieldtechnician.jpg" alt="T-time global team member at work" />
+          <img src="./assets/Images/fieldsupervisor.jpg" alt="T-time global team member at work" />
         
             
 
         </div>
       <div className="value-featured">
         <h3 className="text-center mb-4">Company Ethos</h3>
-      <div className="accordion" id="accordionExample">
+      <div className="accordion p-4 w-80 mx-auto" id="accordionExample">
   <div className="accordion-item">
     <h2 className="accordion-header ">
       <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -89,10 +93,10 @@ export default function HomePage () {
     <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
       <p style={{textAlign: "left"}}> T-Time Nigeria Global: Mission is to be a:</p>
-        <p>‥Solution in your Company </p>
-        <p>‥Success in your establishment</p>
-        <p>‥Standard in your services</p>
-        <p>‥Adding value in your industry.</p>
+        <p style={{textAlign: "left"}}>‥Solution in your Company </p>
+        <p style={{textAlign: "left"}}>‥Success in your establishment</p>
+        <p style={{textAlign: "left"}}>‥Standard in your services</p>
+        <p style={{textAlign: "left"}}>‥Adding value in your industry.</p>
          
       </div>
     </div>

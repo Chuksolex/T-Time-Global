@@ -21,3 +21,23 @@
     }
 }
 
+.about-message {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: auto;
+
+    p {
+        text-align:justify;
+    }
+}
+
+.accordion {
+    
+    --bs-accordion-btn-bg:    white;
+    --bs-accordion-active-bg: 
+    #198754;
+    --bs-accordion-active-color: white;
+    --bs-accordion-btn-focus-box-shadow: none;
+
+}

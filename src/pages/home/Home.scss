@@ -17,7 +17,12 @@
     p {
       font-size: 1.2rem;
       margin-bottom: 10px;
+      text-align: justify;
+
+     
+      
     }
+   
   }
 
   .team1-pics {
@@ -29,6 +34,9 @@
       border-radius: 8px;  // Add some border-radius for styling
     }
   }
+  
+    
+
 }
 
 .value-section .team2-pics img {
@@ -70,7 +78,7 @@
     color: #dc3545;
   }
 }
-
+ 
 
 @media (max-width: 768px) {
   .about-section {
@@ -108,6 +116,7 @@
   .team2-pics {
     flex: 1;  // Take up available space
     position: relative;
+    height: auto;
 
     img {
       width: 100%;  // Make the image fill the container
@@ -123,41 +132,16 @@
     max-width: 600px;  // Set a maximum width for the first column
     padding-right: 20px;  // Add some spacing between the columns
      
-  //   .accordion {
-  //     border: 2px solid #dc3545;
-  //     /* You can adjust the border width and color to suit your design */
-  // }
-  .accordion .accordion-content {
-    /* Styles for the content of each accordion item */
-          border: 2px solid #dc3545;
-
-}
-.accordion .accordion-header {
-  box-shadow: none; /* Removes the box-shadow from the accordion header */
-}
-
-/* Target the accordion content to remove box-shadow */
-.accordion .accordion-content {
-  box-shadow: none; /* Removes the box-shadow from the accordion content */
-}
-
-    .accordion-button{
-      background-color: white;
-      border-color: #dc3545;
-
-    }
-    .accordion-item {
-      border-color: #dc3545;
-    }
-    .accordion-header{
-      border-color: #dc3545;
-
-    }
-    .accordion-button:not(.collapsed){
-      border-color: red;
-      
-
-    }
+    .accordion {
+    
+        --bs-accordion-btn-bg:    white;
+        --bs-accordion-active-bg: #198754;
+        --bs-accordion-active-color: white;
+        --bs-accordion-btn-focus-box-shadow: none;
+        
+  }
+ 
+  
    
     h3 {
       font-size: 2.5rem;
