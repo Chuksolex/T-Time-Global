@@ -64,7 +64,7 @@ function About() {
   <div className="accordion-item">
     <h2 className="accordion-header">
       <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Mission
+        Anchor Point
       </button>
     </h2>
     <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -141,7 +141,7 @@ function About() {
       
         
           <h5 className="c">Our Address</h5>
-          <p className=""><i className="bi bi-geo-alt mx-2 fs-6" style={{color: "red"}}></i>No. 64 Federal Housing Estate Uyo. Akwa Ibom State. Nigeria</p>
+          <p className=""><i className="bi bi-geo-alt mx-2 fs-6" style={{color: "red"}}></i>46 Housing Estate Uyo. Akwa Ibom State. Nigeria</p>
       
     </div>
     <div  className="col-md-4 mb-4">

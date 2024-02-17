@@ -26,7 +26,7 @@ export default function HomePage () {
                 and render a working solution to different Establishment, Organization, Company and industry.
                  For every success is a matter of time and we are Time so we are very optimistic with our 
                  potential. To avoid mistakes, errors, delays, and excuses from individual workers, even 
-                 extra  expenses, then T-Time Nigeria Global is here to excuse any excuses in delivering quality, timely and excellent work. It is bound to be a challenge, so we target it on time. Our team of Engineers and Technicians are reliable and ready for the work from the starting to completion, and operation.  
+                 extra  expenses, then T-Time Nigeria Global is here to excuse any excuses in delivering quality, timely and excellent work. Every project has its challenges, so we target it on time. Our team of Engineers and Technicians are reliable and ready for the work from the starting to completion, and operation.  
             </p>
             
             
@@ -65,7 +65,7 @@ export default function HomePage () {
     </h2>
     <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      Our goal is to contribute to the success of every of our client to meet their target. Every contract undertaken by T-Time we shoulder the responsibility and give out the solution on time.
+      Our goal is to contribute to the success of every of our client to meet their target. Every contract carried out by T-Time we shoulder the responsibility and give out the timely completion.
 
       </div>
     </div>

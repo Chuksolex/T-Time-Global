@@ -11,10 +11,10 @@ export const portfolioData = [
     },
     {
       id: 2,
-      title: `Vinpy Hotel Uyo: Installation of Elevator (Lift)`,
-      description: `Successful installation of elevator system At Vinpy Hotel with Olat Grow Ventures...`,
+      title: `Finishing Work`,
+      description: `Finishing works completed at Uyo Living Quarters...`,
 
-      imgSrc: `./assets/Images/vimpy.jpg`,
+      imgSrc: `./assets/Images/finishings.jpg`,
     },
     {
       id: 3 ,
