@@ -23,20 +23,20 @@ export const servicesData = [
       Why choose T-Time? Our commitment to reliability, safety, and efficiency sets us apart. We understand the importance of timely project completion and strive to exceed industry standards, delivering cutting-edge technology for long-term performance.
       
       Elevate your indoor experience with T-Time's air conditioning installations. Our skilled workforce, detailed consultations, and dedication to quality assurance ensure that your space is equipped with the latest in HVAC innovation. Contact T-Time Nigeria Global today to embark on a journey of unparalleled air conditioning comfort and efficiency. Your satisfaction is our priority.`,
-      imgSrc: `./assets/Images/airconinstall.png`,
+      imgSrc: `./assets/Images/aircond.jpg`,
     },
-    {
-      id: `lift-or-elevator-installation`,
-      title: 'Lift (Elevator) Installation',
-      description: `Experience a new level of convenience and efficiency with T-Time Nigeria Global's lift (elevator) installation service. Elevate your space, we partner with a reliable company to give you a well deserved or customized lift with accurate installation, excellent commissioning, and satified test running to enhanced accessibility.
+    // {
+    //   id: `lift-or-elevator-installation`,
+    //   title: 'Lift (Elevator) Installation',
+    //   description: `Experience a new level of convenience and efficiency with T-Time Nigeria Global's lift (elevator) installation service. Elevate your space, we partner with a reliable company to give you a well deserved or customized lift with accurate installation, excellent commissioning, and satified test running to enhanced accessibility.
 
-      Our skilled team ensures that every lift installation aligns with your specific needs, emphasizing safety, reliability, and adherence to industry standards. For businesses, companies, and establishment, we install lifts that blend seamlessly with your architecture, providing smooth and reliable vertical transportation. In commercial settings, our elevators are tailored for efficiency, ensuring optimal flow within your premises.
+    //   Our skilled team ensures that every lift installation aligns with your specific needs, emphasizing safety, reliability, and adherence to industry standards. For businesses, companies, and establishment, we install lifts that blend seamlessly with your architecture, providing smooth and reliable vertical transportation. In commercial settings, our elevators are tailored for efficiency, ensuring optimal flow within your premises.
       
-      Why choose T-Time? Our customer-centric approach involves detailed consultations to understand your requirements.
+    //   Why choose T-Time? Our customer-centric approach involves detailed consultations to understand your requirements.
       
-      Trust T-Time Nigeria Global to elevate your surroundings. Our commitment to reliability, safety, and efficiency ensures that your lift installation exceeds expectations. Contact us today and step into a world where vertical mobility meets unmatched craftsmanship. Your journey to elevated living starts with T-Time.`,
-      imgSrc: `./assets/Images/Elevators1.jpg`,
-    },
+    //   Trust T-Time Nigeria Global to elevate your surroundings. Our commitment to reliability, safety, and efficiency ensures that your lift installation exceeds expectations. Contact us today and step into a world where vertical mobility meets unmatched craftsmanship. Your journey to elevated living starts with T-Time.`,
+    //   imgSrc: `./assets/Images/Elevators1.jpg`,
+    // },
     {
       id: `refrigerator-maintenace`,
       title: 'Refrigerator Maintenance',

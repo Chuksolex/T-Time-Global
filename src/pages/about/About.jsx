@@ -64,12 +64,12 @@ function About() {
   <div className="accordion-item">
     <h2 className="accordion-header">
       <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Anchor Point
+        Anchor Point:
       </button>
     </h2>
     <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-        <strong>Our mission </strong> is to serve our clients with a quality services designed to deliver the most advanced and cost effective electrical or mechanical installations, repair and related services in the industry. We are sure that our Clients have their interests company like to provide long-term and long lasting competive services.
+         Is to serve our clients with a quality services designed to deliver the most advanced and cost effective electrical or mechanical installations, repair and related services in the industry. We are sure that our Clients have their interests company like to provide long-term and long lasting competive services.
       </div>
  
      
