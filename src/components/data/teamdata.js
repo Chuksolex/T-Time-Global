@@ -16,13 +16,13 @@ export const teamData = [
     },
     {
       id: `Secretary`,
-      title: 'Mis. Imaobong Mathew',
+      title: 'Mis. Mayen Sunday',
       description: `Secretary`,
       imgSrc: `./assets/Images/sec.jpeg`,
     },
     {
       id: `Hr`,
-      title: 'Past. E.E. Okong',
+      title: 'Past. E.E. Okon',
       description: `Human Resource Manager.`,
       imgSrc: `./assets/Images/ceo.jpg`,
     },
