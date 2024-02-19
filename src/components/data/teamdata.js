@@ -18,13 +18,13 @@ export const teamData = [
       id: `Secretary`,
       title: 'Mis. Imaobong Mathew',
       description: `Secretary`,
-      imgSrc: `./assets/Images/fieldsupervisor.jpg`,
+      imgSrc: `./assets/Images/sec.jpeg`,
     },
     {
       id: `Hr`,
       title: 'Past. E.E. Okong',
       description: `Human Resource Manager.`,
-      imgSrc: `./assets/Images/md2.png`,
+      imgSrc: `./assets/Images/ceo.jpg`,
     },
       
     
