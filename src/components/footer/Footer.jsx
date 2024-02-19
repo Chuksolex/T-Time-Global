@@ -1,9 +1,7 @@
 import "./Footer.scss";
-//import { Cart4, Cart3, Trash, Heart, Plus, Dash } from 'react-bootstrap-icons'
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-//const navigate = useNavigate();
 
  
 
@@ -28,7 +26,7 @@ const Footer = () => {
             > <span className="fs-6"><span className="text-danger fs-6">T-time</span>nigeriaglobal.com.ng</span></Link>
           </div>
 
-          <div  className="text-center p-3"><span className="fw-6 fs-6">Web-developer: </span>
+          <div  className="text-center p-3"><span className="fw-6 fs-6">Design: </span>
             <Link to="https://ng.linkedin.com/in/chukwuma-oleka" target="_blank"
             > <span className="text-success fw-6 fs-6" >Chuk.O.</span></Link>
           </div>
