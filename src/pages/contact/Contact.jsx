@@ -72,11 +72,10 @@ function Contact() {
                     <strong> <h2>Office Address:</h2></strong> Plot 46 Federal Housing Estate, Uyo. Nigeria
                   </p>
                   <p>
-                    <strong><i className="bi bi-telephone-forward-fill mx-2 fs-6" style={{color: "red"}}></i></strong> 08022458238.
+                    <strong><i className="bi bi-telephone mx-2 fs-6" style={{color: "red"}}></i></strong> <a href="tel:08022458238" >08022458238</a>
                   </p>
                   <p>
-                    <strong><i className="bi bi-envelope-check mx-2 fs-6" style={{color: "red"}}></i></strong> t.timenigeriaglobal@gmail.com
-                  </p>
+                    <strong><i className="bi bi-envelope-check mx-2 fs-6" style={{color: "red"}}></i></strong><a href="mailto:t.timenigeriaglobal@gmail.com">t.timenigeriaglobal@gmail.com</a></p>
                 </div>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987.2431219537204!2d7.909157162767801!3d5.02459118011993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105d5632298208dd%3A0x64b01dc4bfab9b23!2sFederal%20Housing%20Estate!5e0!3m2!1sen!2sng!4v1705154572300!5m2!1sen!2sng"

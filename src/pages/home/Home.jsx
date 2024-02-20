@@ -57,20 +57,25 @@ export default function HomePage () {
       <div className="value-featured">
         <h3 className="text-center mb-4">Company Ethos</h3>
       <div className="accordion p-4 w-80 mx-auto" id="accordionExample">
+      
+
+  {/* adding */}
   <div className="accordion-item">
-    <h2 className="accordion-header ">
-      <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-         Goal
+    <h2 className="accordion-header">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#goalTwo" aria-expanded="false" aria-controls="goalTwo">
+      Goal
       </button>
     </h2>
-    <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div className="accordion-body">
+    <div id="goalTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div className="accordion-body">
       Our goal is to contribute to the success of every of our client to meet their target. Every contract carried out by T-Time we shoulder the responsibility and give out the timely completion.
-
-      </div>
     </div>
-    
+    </div>
   </div>
+  
+
+
+
   <div className="accordion-item">
     <h2 className="accordion-header">
       <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -86,11 +91,11 @@ export default function HomePage () {
   </div>
   <div className="accordion-item">
     <h2 className="accordion-header">
-      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#missionThree" aria-expanded="false" aria-controls="missionThree">
         Mission
       </button>
     </h2>
-    <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="missionThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
       <p style={{textAlign: "left"}}> T-Time Nigeria Global: Mission is to be a:</p>
         <p style={{textAlign: "left"}}>‥Solution in your Company </p>
@@ -102,29 +107,32 @@ export default function HomePage () {
     </div>
     
   </div>
-  
-  <div className="accordion-item">
+
+  {/* adding */}
+<div className="accordion-item">
     <h2 className="accordion-header">
-      <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-         Purpose
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#purposeTwo" aria-expanded="false" aria-controls="purposeTwo">
+      Purpose
       </button>
     </h2>
-    <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div className="accordion-body">
+    <div id="purposeTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div className="accordion-body">
       T-Time Nigeria Global: we are answerable to technical works with better finishing, making it perfect, also putting it in place for better services.
- 
-
-      </div>
     </div>
-    
+    </div>
   </div>
+  
+  
+
+
+
   <div className="accordion-item">
     <h2 className="accordion-header">
-      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#valueTwo" aria-expanded="false" aria-controls="valueTwo">
         Value
       </button>
     </h2>
-    <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="valueTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
       T-Time Nigeria Global:  We are zero excuses company with an experience and qualify personnel put together for Timely Solution and quality works.
 
@@ -134,11 +142,11 @@ export default function HomePage () {
   </div>
   <div className="accordion-item">
     <h2 className="accordion-header">
-      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#whatTwo" aria-expanded="false" aria-controls="whatTwo">
         What We Do
       </button>
     </h2>
-    <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div id="whatTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
       We are into industrial and domestic Electrical wiring, installation of Elevator (Lift), Air Conditioner (Ac), with maintenance, we carry out repairs & services of Refrigerator (Fridge), Generator, and Painting works. We are also into Consultancy.
 
