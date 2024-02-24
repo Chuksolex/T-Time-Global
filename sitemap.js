@@ -9,8 +9,28 @@ const generator = new SitemapGenerator('https://www.t-timenigeriaglobal.com.ng',
   customDomain: 'https://www.t-timenigeriaglobal.com.ng', // Set your custom domain
 });
 
+
+
+
 // Start the generator
 generator.start();
+
+// Get the sitemap instance
+const sitemap = generator.getSitemap();
+
+// Add static URL on crawl init.
+generator.getCrawler().on('crawlstart', () => {
+  //Add additional URLs to the sitemap
+sitemap.addURL('https://www.t-timenigeriaglobal.com.ng/about');
+sitemap.addURL('https://www.t-timenigeriaglobal.com.ng/contact');
+sitemap.addURL('https://www.t-timenigeriaglobal.com.ng/services');
+sitemap.addURL('https://t-timenigeriaglobal.com.ng/portfolio');
+sitemap.addURL('https://t-timenigeriaglobal.com.ng/services/electrical-installation');
+sitemap.addURL('https://t-timenigeriaglobal.com.ng/services/air-conditioning-system');
+sitemap.addURL('https://t-timenigeriaglobal.com.ng/services/refrigerator-maintenace');
+sitemap.addURL('https://t-timenigeriaglobal.com.ng/services/generator-maintenance');
+sitemap.addURL('https://t-timenigeriaglobal.com.ng/services/painting-services');
+});
 
 // Event handlers
 generator.on('done', () => {
