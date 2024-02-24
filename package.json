@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npx vite build",
+    "build": "npx vite build && node sitemap.js",
     "start": "serve -s dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -21,6 +21,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1",
     "react-slick": "^0.29.0",
+    "sitemap-generator-custom-domain": "^0.0.1",
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
@@ -36,6 +37,6 @@
     "serve": "^14.2.1",
     "vite": "^5.0.12",
     "vite-plugin-copy": "^0.1.6",
-        "vite-plugin-static-copy": "^1.0.0"
+    "vite-plugin-static-copy": "^1.0.0"
   }
 }
