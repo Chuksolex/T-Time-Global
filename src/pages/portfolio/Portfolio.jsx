@@ -13,6 +13,24 @@ const Portfolio = () => {
     return text.slice(0, maxLength) + '...';
   }
   
+  const portfolioSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      ...portfolioData.map(project => ({
+        "@type": "CreativeWork",
+        "name": project.title,
+        "description": project.description,
+        "image": project.imgSrc // Add image URL here
+      })),
+      ...porfolioWorkInProgress.map(project => ({
+        "@type": "CreativeWork",
+        "name": project.title,
+        "description": project.description,
+        "image": project.imgSrc // Add image URL here
+      }))
+    ]
+  };
 
   return (
     <div className="container mt-5">
@@ -61,6 +79,8 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
+      <script type="application/ld+json">{JSON.stringify(portfolioSchema)}</script>
+
     </div>
   );
 };

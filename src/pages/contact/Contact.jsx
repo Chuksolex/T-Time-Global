@@ -59,6 +59,25 @@ function Contact() {
           setEmailError('Please fill in all fields and provide a valid email.');
         }
       };
+
+
+
+      const contactPageSchema = {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Us",
+        "description": "Need any of services (electrical-wiring, refregerator maintenance, air-conditioner installations, etc.). Contact us for inquiries, feedback, or support.",
+        "url": "https://t-timenigeriaglobal.com.ng/contact",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": " 08022458238",
+          "contactType": "customer service",
+          "areaServed": {
+            "@type": "Country",
+            "name": "Nigeria"
+          }
+        }
+      };
     
         return (
             <div id="contact">
@@ -127,6 +146,8 @@ function Contact() {
                   <hr />
                   <h3 className="fs-6 fw-300">Privacy Policy:</h3> <span>We only receive and process your contact details for the purpose of serving your request for quoation, or consultation in our services.</span>
                   </div>
+                  <script type="application/ld+json">{JSON.stringify(contactPageSchema)}</script>
+
             </div>
         )
     }

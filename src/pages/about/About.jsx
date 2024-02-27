@@ -1,5 +1,6 @@
 import "./About.scss";
 import { teamData } from "../../components/data/teamdata";
+import { Link } from "react-router-dom";
 
 function About() {
   function truncateText(text, maxLength) {
@@ -8,6 +9,29 @@ function About() {
     }
     return text.slice(0, maxLength) + '...';
   }
+
+  const businessDescription = "Technical company registered under the CAC (RC 7247098), located at 46 Fed. Housing Uyo. Nigeria. Specializes in the installation and maintenance of Lifts (elevators), Air-conditioners A.C., Refrigerators, Generators, Electrical Wiring including House painting, and Consultancy.";
+
+  
+
+  // Create JSON-LD schema for the home page
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "About T-Time Nigeria Global",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "46 Housing Estate Uyo. Akwa Ibom State. Nigeria",
+      "addressLocality": "Uyo",
+      "addressRegion": "Akwa Ibom",
+      "postalCode": "520231",
+      "addressCountry": "Nigeria"
+    },
+    "telephone": " 08022458238",
+    "url": "https://t-timenigeriaglobal.com.ng/about",
+    "description": businessDescription,
+    
+  };
 
   return (
     <div className="about container">
@@ -22,11 +46,10 @@ function About() {
           </h2>
           <div id="aboutTwo" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
-              T-Time Nigeria Global is a technical company registered under the CAC with registration number RC 7247098, located at Plot 46 Federal Housing Estate. Uyo. Akwa Ibom State Nigeria. It specializes in the installation and maintenance of Lifts (elevators), Air-conditioners A.C., Refrigerators, Generators, Electrical Wiring including House painting, and Consultancy.
+              <Link to="/"><span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span></Link>is a technical company registered under the CAC with registration number RC 7247098, located at Plot 46 Federal Housing Estate. Uyo. Akwa Ibom State Nigeria. It specializes in the installation and maintenance of Lifts (elevators), Air-conditioners A.C., Refrigerators, Generators, Electrical Wiring including House painting, and <Link to="/contact" style={{color: "green"}}>Consultancy</Link>.
             </div>
           </div>
         </div>
-
        
         {/* adding stuff here */}
         <div className="accordion-item">
@@ -37,7 +60,7 @@ function About() {
           </h2>
           <div id="collapseVisionTwo" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
-            At T-Time Nigeria Global, safety is paramount in our philosophy. We adhere to the highest safety protocols, both for our team and our clients. This commitment extends to our installation and maintenance services, where proactive and preventive measures are prioritized.
+            At <Link to="/"><span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span></Link>, safety is paramount in our philosophy. We adhere to the highest safety protocols, both for our team and our clients. This commitment extends to our installation and maintenance services, where proactive and preventive measures are prioritized.
             </div>
           </div>
         </div>
@@ -50,7 +73,7 @@ function About() {
           </h2>
           <div id="collapseVision" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
-              T-Time Nigeria Global our aim is given the best perfectly, reducing the cost and maintaining the standard.
+            <Link to="/"><span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span></Link> our aim is given the best perfectly, reducing the cost and maintaining the standard.
             </div>
           </div>
         </div>
@@ -74,22 +97,22 @@ function About() {
         <h2>Welcome to T-Time Nigeria Global!</h2>
 
         <p className="">
-          At T-Time Nigeria Global, we are in the field
+          At <Link to="/"><span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span></Link>, we are in the field
           of comprehensive electrical installations, elevating your experiences, and maintaining
           the heartbeat of your spaces. With a commitment to excellence and a passion for
-          precision, we bring forth a wealth of expertise in electrical installations, elevator(lift), air conditioning systems (A.C.), refrigerator(fridge), generator, and painting works.
+          precision, we bring forth a wealth of expertise in <Link to="/services/air-conditioning-system" style={{color: "green"}}>air conditioning systems (A.C.)</Link>, <Link to="/services/refrigerator-maintenace" style={{color: "green"}}>refrigerator(fridge)</Link>, <Link to="/services/generator-maintenance" style={{color: "green"}}>generator</Link>, and <Link to="/services/generator-maintenance" style={{color: "green"}}>generator</Link>.
         </p>
 
         <p>
-          At T-Time Nigeria Global, we envision a world where every space is a testament to
+          At <Link to="/"><span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span></Link>, we envision a world where every space is a testament to
           efficiency, safety, and aesthetic brilliance. Our team is dedicated to turning your
-          electrical and structural aspirations into reality, delivering solutions that stand
-          the test of time.
+          electrical and structural aspirations into reality, <Link to="/portfolio" style={{color: "green"}}>delivering solutions that stand
+          the test of time.</Link>
         </p>
 
         <p className="">
           Experience excellence, reliability, and innovation with T-Time Nigeria Global -
-          where every installation is a masterpiece and every maintenance service is a commitment
+          where <Link to="/services" style={{color: 'green'}}>every installation is a masterpiece and every maintenance service </Link>is a commitment
           to your satisfaction.
         </p>
 
@@ -134,6 +157,8 @@ function About() {
           <p className=""><i className="bi bi-envelope-check mx-2 fs-6" style={{color: "red"}}></i><a href="mailto:t.timenigeriaglobal@gmail.com">t.timenigeriaglobal@gmail.com</a></p>
         </div>
       </div>
+      <script type="application/ld+json">{JSON.stringify(aboutSchema)}</script>
+
     </div>
   );
 }

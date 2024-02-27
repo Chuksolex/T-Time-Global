@@ -1,7 +1,7 @@
 // components/HomePage.j
 import HomeSlider from "../../components/slider/HomeSlider";
 import CustomButton from "../../components/customButton/CustomButton";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./Home.scss";
 import { testimonialData } from "../../components/data/testimonialdata.js";
 
@@ -11,6 +11,30 @@ import { testimonialData } from "../../components/data/testimonialdata.js";
 //import jumbotronFullWidth from "../../components/jumbotronFullWidth/JumbotronFullWith";
 export default function HomePage () {
   const navigate = useNavigate();
+
+  const businessDescription = "Technical Solution Company set up to provide and render a working solution to different Establishment, with efficient installation or repair of refrigerators, electrical works, generators, lifts, painting services, etc..";
+
+  const teamPictureUrl =  "/public/assets/Images/reception.png";
+
+  // Create JSON-LD schema for the home page
+  const homeSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "T-Time Nigeria Global",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "46 Housing Estate Uyo. Akwa Ibom State. Nigeria",
+      "addressLocality": "Uyo",
+      "addressRegion": "Akwa Ibom",
+      "postalCode": "520231",
+      "addressCountry": "Nigeria"
+    },
+    "telephone": " 08022458238",
+    "url": "https://t-timenigeriaglobal.com.ng",
+    "description": businessDescription,
+    "image": teamPictureUrl
+  };
+
   return (
     <div>
 
@@ -22,11 +46,11 @@ export default function HomePage () {
       <div className="about-section">
           <div className="about-featured jumbotron my-5 container-fluid">
             <h3 className="display-4">Our Story </h3>
-            <p className="lead "> T-Time Nigeria Global : is a Technical Solution Company set up to provide 
+            <p className="lead "> <span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span> : is a Technical Solution Company set up to provide 
                 and render a working solution to different Establishment, Organization, Company and industry.
                  For every success is a matter of time and we are Time so we are very optimistic with our 
                  potential. To avoid mistakes, errors, delays, and excuses from individual workers, even 
-                 extra  expenses, then T-Time Nigeria Global is here to excuse any excuses in delivering quality, timely and excellent work. Every project has its challenges, so we target it on time. Our team of Engineers and Technicians are reliable and ready for the work from the starting to completion, and operation.  
+                 extra  expenses, then <span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span> is here to excuse any excuses in delivering quality, timely and excellent work. Every project has its challenges, so we target it on time. Our team of Engineers and Technicians are reliable and ready for the work from the starting to completion, and operation.  
             </p>
             
             
@@ -84,7 +108,7 @@ export default function HomePage () {
     </h2>
     <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      T-Time Nigeria Global our aim is given the best perfectly, reducing the cost and maintaining the standard.
+      <span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span> our aim is given the best perfectly, reducing the cost and maintaining the standard.
 
       </div>
     </div>
@@ -97,7 +121,7 @@ export default function HomePage () {
     </h2>
     <div id="missionThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      <p style={{textAlign: "left"}}> T-Time Nigeria Global: Mission is to be a:</p>
+      <p style={{textAlign: "left"}}> <span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span>: Mission is to be a:</p>
         <p style={{textAlign: "left"}}>‥Solution in your Company </p>
         <p style={{textAlign: "left"}}>‥Success in your establishment</p>
         <p style={{textAlign: "left"}}>‥Standard in your services</p>
@@ -117,7 +141,7 @@ export default function HomePage () {
     </h2>
     <div id="purposeTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
     <div className="accordion-body">
-      T-Time Nigeria Global: we are answerable to technical works with better finishing, making it perfect, also putting it in place for better services.
+    <span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span>: we are answerable to technical works with better finishing, making it perfect, also putting it in place for better services.
     </div>
     </div>
   </div>
@@ -134,7 +158,7 @@ export default function HomePage () {
     </h2>
     <div id="valueTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      T-Time Nigeria Global:  We are zero excuses company with an experience and qualify personnel put together for Timely Solution and quality works.
+      <span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span>:  We are zero excuses company with an experience and qualify personnel put together for Timely Solution and quality works.
 
 
       </div>
@@ -148,7 +172,7 @@ export default function HomePage () {
     </h2>
     <div id="whatTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      We are into industrial and domestic Electrical wiring, installation of Elevator (Lift), Air Conditioner (Ac), with maintenance, we carry out repairs & services of Refrigerator (Fridge), Generator, and Painting works. We are also into Consultancy.
+      We are into industrial and domestic <Link to="/services/electrical-installation" style={{color: "green"}}>Electrical-wiring</Link>, installation of Elevator (Lift), <Link to="/services/air-conditioning-system" style={{color: "green"}}>Air Conditioner (Ac)</Link>, with maintenance, we carry out repairs & services of <Link to="/services/refrigerator-maintenace" style={{color: "green"}}>Refrigerator (Fridge)</Link>, <Link to="/services/generator-maintenance" style={{color: "green"}}>Generator</Link>, and <Link to="/services/painting-services" style={{color: "green"}}>Painting works</Link>. We are also into Consultancy.
 
 
       </div>
@@ -176,7 +200,7 @@ export default function HomePage () {
         <div className="card">
           <div className="card-body">
             <h5 className="card-title">Excellence</h5>
-            <p className="card-text">Every installation is a masterpiece. We strive for excellence in every aspect of our services.</p>
+            <p className="card-text">Every installation is a masterpiece. We strive for excellence in every aspect of our <Link to={"/services"} style={{color: "green"}}>services</Link>.</p>
           </div>
         </div>
       </div>
@@ -201,7 +225,7 @@ export default function HomePage () {
     </div>
 
     <p className="text-center mt-4">
-      Ready to experience the T-Time difference? 💡 <strong onClick={()=> navigate("/contact")} style={{cursor:"pointer"}}>Contact us today!</strong>
+      Ready to experience the <Link to="/portfolio"><span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span> difference</Link>? 💡 <strong onClick={()=> navigate("/contact")} style={{cursor:"pointer"}}>Contact us today!</strong>
     </p>
   </section>
 
@@ -226,9 +250,9 @@ export default function HomePage () {
 
       
 
-     
+    <script type="application/ld+json">{JSON.stringify(homeSchema)}</script>
     </div>
   );
-};
+}
 
 

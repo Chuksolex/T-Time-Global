@@ -12,6 +12,17 @@ const Services = () => {
     }
     return text.slice(0, maxLength) + '...';
   }
+
+  const servicesSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": servicesData.map(service => ({
+      "@type": "Service",
+      "name": service.title,
+      "description": service.description,
+      "url": `https://t-timenigeriaglobal.com.ng/services/${service.id}`
+    }))
+  };
   
 
   return (
@@ -41,6 +52,8 @@ const Services = () => {
           </div>
         ))}
       </div>
+      <script type="application/ld+json">{JSON.stringify(servicesSchema)}</script>
+
     </div>
   );
 };
