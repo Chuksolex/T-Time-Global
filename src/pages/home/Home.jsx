@@ -172,7 +172,7 @@ export default function HomePage () {
     </h2>
     <div id="whatTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      We are into industrial and domestic <Link to="/services/electrical-installation" style={{color: "green"}}>Electrical-wiring</Link>, installation of Elevator (Lift), <Link to="/services/air-conditioning-system" style={{color: "green"}}>Air Conditioner (Ac)</Link>, with maintenance, we carry out repairs & services of <Link to="/services/refrigerator-maintenace" style={{color: "green"}}>Refrigerator (Fridge)</Link>, <Link to="/services/generator-maintenance" style={{color: "green"}}>Generator</Link>, and <Link to="/services/painting-services" style={{color: "green"}}>Painting works</Link>. We are also into Consultancy.
+      We are into industrial and domestic <Link to="/services/electrical-installation" style={{color: ""}}>Electrical-wiring</Link>, installation of Elevator (Lift), <Link to="/services/air-conditioning-system" style={{color: ""}}>Air Conditioner (Ac)</Link>, with maintenance, we carry out repairs & services of <Link to="/services/refrigerator-maintenace" style={{color: ""}}>Refrigerator (Fridge)</Link>, <Link to="/services/generator-maintenance" style={{color: ""}}>Generator</Link>, and <Link to="/services/painting-services" style={{color: "green"}}>Painting works</Link>. We are also into Consultancy.
 
 
       </div>
@@ -200,7 +200,7 @@ export default function HomePage () {
         <div className="card">
           <div className="card-body">
             <h5 className="card-title">Excellence</h5>
-            <p className="card-text">Every installation is a masterpiece. We strive for excellence in every aspect of our <Link to={"/services"} style={{color: "green"}}>services</Link>.</p>
+            <p className="card-text">Every installation is a masterpiece. We strive for excellence in every aspect of our <Link to={"/services"} style={{color: ""}}>services</Link>.</p>
           </div>
         </div>
       </div>

@@ -46,7 +46,7 @@ function About() {
           </h2>
           <div id="aboutTwo" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
             <div className="accordion-body">
-              <Link to="/"><span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span></Link>is a technical company registered under the CAC with registration number RC 7247098, located at Plot 46 Federal Housing Estate. Uyo. Akwa Ibom State Nigeria. It specializes in the installation and maintenance of Lifts (elevators), Air-conditioners A.C., Refrigerators, Generators, Electrical Wiring including House painting, and <Link to="/contact" style={{color: "green"}}>Consultancy</Link>.
+              <Link to="/"><span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span></Link>is a technical company registered under the CAC with registration number RC 7247098, located at Plot 46 Federal Housing Estate. Uyo. Akwa Ibom State Nigeria. It specializes in the installation and maintenance of Lifts (elevators), Air-conditioners A.C., Refrigerators, Generators, Electrical Wiring including House painting, and <Link to="/contact" style={{color: ""}}>Consultancy</Link>.
             </div>
           </div>
         </div>
@@ -100,7 +100,7 @@ function About() {
           At <Link to="/"><span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span></Link>, we are in the field
           of comprehensive electrical installations, elevating your experiences, and maintaining
           the heartbeat of your spaces. With a commitment to excellence and a passion for
-          precision, we bring forth a wealth of expertise in <Link to="/services/air-conditioning-system" style={{color: "green"}}>air conditioning systems (A.C.)</Link>, <Link to="/services/refrigerator-maintenace" style={{color: "green"}}>refrigerator(fridge)</Link>, <Link to="/services/generator-maintenance" style={{color: "green"}}>generator</Link>, and <Link to="/services/generator-maintenance" style={{color: "green"}}>generator</Link>.
+          precision, we bring forth a wealth of expertise in <Link to="/services/air-conditioning-system" style={{color: ""}}>air conditioning systems (A.C.)</Link>, <Link to="/services/refrigerator-maintenace" style={{color: ""}}>refrigerator(fridge)</Link>, <Link to="/services/generator-maintenance" style={{color: ""}}>generator</Link>, and <Link to="/services/generator-maintenance" style={{color: ""}}>generator</Link>.
         </p>
 
         <p>
@@ -112,7 +112,7 @@ function About() {
 
         <p className="">
           Experience excellence, reliability, and innovation with T-Time Nigeria Global -
-          where <Link to="/services" style={{color: 'green'}}>every installation is a masterpiece and every maintenance service </Link>is a commitment
+          where <Link to="/services" style={{color: ''}}>every installation is a masterpiece and every maintenance service </Link>is a commitment
           to your satisfaction.
         </p>
 
@@ -146,7 +146,7 @@ function About() {
       <div className="row mt-4">
         <div className="col-md-4 mb-4">
           <h5 className="c">Our Address</h5>
-          <p className=""><i className="bi bi-geo-alt mx-2 fs-6" style={{color: "red"}}></i>46 Housing Estate Uyo. Akwa Ibom State. Nigeria</p>
+          <p className=""><i className="bi bi-geo-alt mx-2 fs-6" style={{color: "red"}}></i>46 Federal Housing Estate Uyo. Akwa Ibom State. Nigeria</p>
         </div>
         <div className="col-md-4 mb-4">
           <h5 className="c">Call an Expert:</h5>
