@@ -61,7 +61,7 @@ export default function HomePage () {
         </div>
 
         <div className="team1-pics">
-          <img src="./assets/Images/reception.png" alt="T-time global team member at work" />
+          <img src="./assets/Images/reception.jpeg" alt="T-time global team members at work" />
 
         </div>
 

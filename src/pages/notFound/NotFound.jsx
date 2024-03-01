@@ -8,9 +8,7 @@ function goToHome(){
   navigate("/")
 }
 
-// function pointer(){
 
-// }
 
     return (
        
