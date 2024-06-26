@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { servicesData } from '../../components/data/servicesdata.js';
+import ReactMarkDown from "react-markdown";
 
 
 
@@ -14,7 +15,7 @@ const ServiceDetail = () => {
 
   // If service not found, display a message
   if (!service) {
-    return <p>Service not found</p>;
+    return <p className='m-4'>Service not found</p>;
   }
 
   // Display service details
@@ -33,7 +34,7 @@ const ServiceDetail = () => {
         {/* Display service description paragraphs */}
         <p>
           {service.description.split('\n').map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
+           <p key={index} className='text-start justify-content'> <ReactMarkDown>{paragraph}</ReactMarkDown></p>
           ))}
         </p>
       </div>

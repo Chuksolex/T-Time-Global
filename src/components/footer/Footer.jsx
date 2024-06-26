@@ -18,18 +18,15 @@ const Footer = () => {
           
          
           <div
-            className="text-center p-3 fs-6 "
+            className="text-center p-3 fs-6 bg-#000"
             
           >
-            <span className="fw-1 fs-6">© 2024 Copyright: </span>
+            <span className="fw-1 fs-6 ">© 2024 Copyright: </span>
             <Link className="text-success fw-1 fs-6" to="/http://localhost:5173"
-            > <span className="fs-6"><span className="text-danger fs-6">T-time</span>nigeriaglobal.com.ng</span></Link>
+            > <span className="fs-6"><span style={{color:"blue", fontWeight: "500", fontSize:"14px"}}>Tech</span><span style={{color:"green", fontWeight: "500", fontSize:"14px"}}>Par </span></span></Link>
           </div>
 
-          <div  className="text-center p-3"><span className="fw-6 fs-6">Design: </span>
-            <Link to="https://ng.linkedin.com/in/chukwuma-oleka" target="_blank"
-            > <span className="text-success fw-6 fs-6" >Chuk.O.</span></Link>
-          </div>
+          
           {/* <!-- Copyright --> */}
         </footer>
         {/* <!-- Footer --> */}

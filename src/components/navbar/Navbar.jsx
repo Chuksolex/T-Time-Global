@@ -5,7 +5,7 @@ import "./Navbar.css"
 function Navbar() {
   const navigate = useNavigate();
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -19,7 +19,7 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <Link className="navbar-brand" to={"/"}>
-        <img src="/assets/Images/logo1.png" 
+        <img src="/assets/Images/techparlogo.jpg" 
                      width="140" height="140" 
                      alt="T-Time-Nigeria-Global Logo" /> 
                 
@@ -47,11 +47,11 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle" to={"/portfolio"} id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <Link className="nav-link dropdown-toggle" to={"/#"} id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 PORTFOLIO
               </Link>
               <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <Link className="dropdown-item" to="/portfolio">GENERAL WORK PORTFOLIO</Link>
+                <Link className="dropdown-item" to="/#">GENERAL WORK PORTFOLIO</Link>
                 <Link className="dropdown-item" disabled to={"#"}>OFFICE & BUSINESS BUILDINGS</Link>
                 <Link className="dropdown-item" to={"#"}>HOTELS</Link>
                 <Link className="dropdown-item" to={"#"}>COMMERCIAL & ENTERTAINMENT CENTERS</Link>
@@ -66,12 +66,19 @@ function Navbar() {
             </li>
             
           </ul>
-          <form className="d-flex">
           
-            <button className="btn btn-outline-success" type="submit" onClick={() => navigate("/contact")}>
-              Work With Us.
+            <button className="btn btn-success btn-outline-primary" type="submit" onClick={() => navigate("/contact")}>
+              <div className="reqquote">
+                <span className="text-white text-bold">Request A Quote</span>
+                <div className="team">
+                  <img src="/assets/Images/team1.png" alt="team member 1" />
+                  <img src="/assets/Images/team2.png" alt="team member 2" />
+                  <img src="/assets/Images/team3.png" alt="team member 3" />
+                </div>
+                
+              </div>
             </button>
-          </form>
+          
         </div>
       </div>
     </nav>

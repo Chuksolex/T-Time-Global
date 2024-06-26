@@ -1,23 +1,19 @@
-import {useState} from "react";
+import { useState } from "react";
 import "./Contact.scss";
-import emailjs from '@emailjs/browser'
+import emailjs from '@emailjs/browser';
 import "dotenv";
 
-//email service id: service_fw5qioy
-//email template id: template_edkwqxs
-//public key: vJ2Acp3n5ocFVWwDY
+// email service id: service_fw5qioy
+// email template id: template_edkwqxs
+// public key: vJ2Acp3n5ocFVWwDY
 
-const publicKey = import.meta.env.VITE_Emailjs_Public_Key;
-const serviceId = import.meta.env.VITE_Email_Service_Id;
-const templateId = import.meta.env.VITE_Email_Template_Id;
-
-
-
-
+const publicKey = import.meta.env.VITE_Emailjs_Public_Key || 'fEMetOu49wP-rF3RE';
+const serviceId = import.meta.env.VITE_Email_Service_Id || 'service_xkgrifm';
+const templateId = import.meta.env.VITE_Email_Template_Id || 'contact_form';
 
 function Contact() {
-    emailjs.init(`${publicKey}`)
-    
+    emailjs.init(publicKey);
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
@@ -28,89 +24,75 @@ function Contact() {
     const isValidEmail = email => {
         const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return regex.test(String(email).toLowerCase());
-      };
-        
-        
+    };
 
-
-      const submit = async () => {
+    const submit = async () => {
         if (name && email && phone && message && isValidEmail(email)) {
-          try {
-            // TODO - send mail using EmailJS
-            await emailjs.send(`${serviceId}`,
-                `${templateId}`, {
-              from_name: name,
-              from_email: email,
-              phone,
-              message,
-            });
-    
-            setName('');
-            setEmail('');
-            setPhone('');
-            setMessage('');
-            setEmailSent(true);
-            setEmailError('');
-          } catch (error) {
-            setEmailError(error);
-            setEmailSent(false);
-          }
+            try {
+                await emailjs.send(serviceId, templateId, {
+                    from_name: name,
+                    from_email: email,
+                    phone,
+                    message,
+                });
+
+                setName('');
+                setEmail('');
+                setPhone('');
+                setMessage('');
+                setEmailSent(true);
+                setEmailError('');
+            } catch (error) {
+                setEmailError(error.text || 'An error occurred while sending the email.');
+                setEmailSent(false);
+            }
         } else {
-          setEmailError('Please fill in all fields and provide a valid email.');
+            setEmailError('Please fill in all fields and provide a valid email.');
         }
-      };
+    };
 
-
-
-      const contactPageSchema = {
+    const contactPageSchema = {
         "@context": "https://schema.org",
         "@type": "ContactPage",
         "name": "Contact Us",
         "description": "Need any of services (electrical-wiring, refregerator maintenance, air-conditioner installations, etc.). Contact us for inquiries, feedback, or support.",
         "url": "https://t-timenigeriaglobal.com.ng/contact",
         "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": " 08022458238",
-          "contactType": "customer service",
-          "areaServed": {
-            "@type": "Country",
-            "name": "Nigeria"
-          }
+            "@type": "ContactPoint",
+            "telephone": "08022458238",
+            "contactType": "customer service",
+            "areaServed": {
+                "@type": "Country",
+                "name": "Nigeria"
+            }
         }
-      };
-    
-        return (
-            <div id="contact">
+    };
 
-              <div className="address">
-              <h1>Contact Us</h1>
-             
-
+    return (
+        <div id="contact">
+            <div className="address">
+                <h1>Contact Us</h1>
                 <div>
-                  <p>
-                    <strong> <h2>Office Address:</h2></strong> Plot 46 Federal Housing Estate, Uyo. Nigeria
-                  </p>
-                  <p>
-                    <strong><i className="bi bi-telephone mx-2 fs-6" style={{color: "red"}}></i></strong> <a href="tel:08022458238" >08022458238</a>
-                  </p>
-                  <p>
-                    <strong><i className="bi bi-envelope-check mx-2 fs-6" style={{color: "red"}}></i></strong><a href="mailto:t.timenigeriaglobal@gmail.com">t.timenigeriaglobal@gmail.com</a></p>
+                    <p>
+                        <strong><h2>Office Address:</h2></strong> Plot 46 Layout ...Abuja. Nigeria
+                    </p>
+                    <p>
+                        <strong><i className="bi bi-telephone mx-2 fs-6" style={{ color: "red" }}></i></strong> <a href="tel:08022458238">08022458.....</a>
+                    </p>
+                    <p>
+                        <strong><i className="bi bi-envelope-check mx-2 fs-6" style={{ color: "red" }}></i></strong><a href="mailto:t.timenigeriaglobal@gmail.com">info@techpar.tech</a></p>
                 </div>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987.2431219537204!2d7.909157162767801!3d5.02459118011993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105d5632298208dd%3A0x64b01dc4bfab9b23!2sFederal%20Housing%20Estate!5e0!3m2!1sen!2sng!4v1705154572300!5m2!1sen!2sng"
-                  width="400"
-                  height="300"
-                  style={{ border: '0' }}
-                  allowFullScreen
-                  loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987.2431219537204!2d7.909157162767801!3d5.02459118011993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105d5632298208dd%3A0x64b01dc4bfab9b23!2sFederal%20Housing%20Estate!5e0!3m2!1sen!2sng!4v1705154572300!5m2!1sen!2sng"
+                    width="400"
+                    height="300"
+                    style={{ border: '0' }}
+                    allowFullScreen
+                    loading="lazy"
                 ></iframe>
-              </div>
-
-
-
-
-                <div className="contact-inputs">
-                  <p>To get free quotation, make enquiries, or hire us, fill the fields below, and we'll reach you soonest.</p>
+            </div>
+            <div className="contact-inputs">
+                <p>To get free quotation, make enquiries, or hire us, fill the fields below, and we'll reach you soonest.</p>
                 <input
                     type="text"
                     placeholder="Your Name:"
@@ -123,7 +105,7 @@ function Contact() {
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                 />
-                  <input
+                <input
                     type="text"
                     placeholder="Your active phone number:"
                     value={phone}
@@ -134,27 +116,17 @@ function Contact() {
                     value={message}
                     onChange={e => setMessage(e.target.value)}
                 ></textarea>
-                <button onClick={submit}> <i className="bi bi-envelope-check mx-2 fs-6" style={{color: "white"}}></i>Send Message</button>
+                <button onClick={submit}> <i className="bi bi-envelope-check mx-2 fs-6" style={{ color: "white" }}></i>Send Message</button>
                 {emailError && <span className="error">{emailError}</span>}
-                <span className={emailSent ? 'visible' : "undefined"}>
-                    Thank you for your message, we will be in touch in no time!
-                </span>
-                </div>
-                
-
-                <div className="container">
-                  <hr />
-                  <h3 className="fs-6 fw-300">Privacy Policy:</h3> <span>We only receive and process your contact details for the purpose of serving your request for quoation, or consultation in our services.</span>
-                  </div>
-                  <script type="application/ld+json">{JSON.stringify(contactPageSchema)}</script>
-
+                {emailSent && <span className="success">Thank you for your message, we will be in touch in no time!</span>}
             </div>
-        )
-    }
- 
-
-  
-
+            <div className="container">
+                <hr />
+                <h3 className="fs-6 fw-300">Privacy Policy:</h3> <span>We only receive and process your contact details for the purpose of serving your request for quotation, or consultation in our services.</span>
+            </div>
+            <script type="application/ld+json">{JSON.stringify(contactPageSchema)}</script>
+        </div>
+    )
+}
 
 export default Contact;
-

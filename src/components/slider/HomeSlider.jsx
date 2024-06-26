@@ -23,55 +23,53 @@ export default function SimpleSlider() {
     autoplay: true,
     autoplaySpeed: 3000,
     fade: true,
+    
     //variableWidth: true,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    adaptiveWidth: true
   };
   return (
     <Slider {...settings}>
         <div className="image-slider">
-      <h2 className="header">Electrical Works</h2>
+      <h2 className="header">Web Development Services:</h2>
 
-              <img src="/assets/Images/tools1.jpg" />
-              <button className="quotebutton" onClick={goToContact}>Get Quote</button>
+              <img src="/assets/Images/code3.jpg" />
+              <button className="quotebutton" onClick={goToContact}>Contact Us</button>
       </div>      
      
-      {/* <div className="image-slider">
-      <h2 className="header">Aircondition Installations & Repairs</h2>
-              <img src="/assets/Images/menup.jpg"  />
-              <button className="quotebutton" onClick={goToContact}>Get Quote</button>
-      </div> */}
+   
       <div className="image-slider">
-      <h2 className="header">Air-conditioner Installations</h2>
+      <h2 className="header">Data Analytics Services:</h2>
 
 
-              <img src="/assets/Images/aircond.jpg"  />
-              <button className="quotebutton" onClick={goToContact}>Get Quote</button>
+              <img src="/assets/Images/hosting2.jpg"  />
+              <button className="quotebutton" onClick={goToContact}>Contact Us</button>
       </div>
       {/* <div className="image-slider">
       <h2 className="header">Elevator Maintenance</h2>
 
               <img src="/assets/Images/Elevators1.jpg"  />
-              <button className="quotebutton" onClick={goToContact}>Get Quote</button>
+              <button className="quotebutton" onClick={goToContact}>Contact Us</button>
       </div> */}
       <div className="image-slider">
-      <h2 className="header">Refrigerators Repairs</h2>
+      <h2 className="header">Geographic Imagery Services GIS:</h2>
 
-              <img src="/assets/Images/fridgerepair.jpg"  />
-              <button className="quotebutton" onClick={goToContact}>Get Quote</button>
+              <img src="/assets/Images/gis1.jpg"  />
+              <button className="quotebutton" onClick={goToContact}>Contact Us</button>
       </div>
       
       
       <div className="image-slider">
-      <h2 className="header">Generator Repairs & Servicing</h2>
+      <h2 className="header">Web Hosting Services:</h2>
 
-              <img src="/assets/Images/lister1.jpg" />
-              <button className="quotebutton" onClick={goToContact}>Get Quote</button>
+              <img src="/assets/Images/hosting1.jpg" />
+              <button className="quotebutton" onClick={goToContact}>Contact Us</button>
       </div>
       <div className="image-slider">
-      <h2 className="header">Painting Works</h2>
+      <h2 className="header">Vsat Fast Internet Services:</h2>
 
-              <img src="/assets/Images/paint.jpg" />
-              <button className="quotebutton" onClick={goToContact}>Get Quote</button>
+              <img src="/assets/Images/tech2.jpg" />
+              <button className="quotebutton" onClick={goToContact}>Contact Us</button>
       </div>
      
       

@@ -1,0 +1,53 @@
+.testimonial-slider-container {
+    position: relative;
+    width: 100%;
+    
+    white-space: nowrap;
+    padding-bottom: 40px; /* to show the dots */
+  }
+  
+  .slick-slide {
+    display: inline-block;
+    width: calc(100% / 3); /* Adjust according to the slidesToShow value */
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  .testimonial-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .testimonial-card {
+    background-color: skyblue;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-message {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-wrap: wrap;
+    word-wrap: break-word;
+  }
+  
+  .testimonial-author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .author-name {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .author-position {
+    font-size: 12px;
+    color: #666;
+  }
+  

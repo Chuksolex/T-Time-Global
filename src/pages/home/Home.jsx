@@ -4,6 +4,7 @@ import CustomButton from "../../components/customButton/CustomButton";
 import { useNavigate, Link } from "react-router-dom";
 import "./Home.scss";
 import { testimonialData } from "../../components/data/testimonialdata.js";
+import TestimonialSlider from "../../components/slider/testimonialSlider.jsx";
 
 
 
@@ -15,6 +16,9 @@ export default function HomePage () {
   const businessDescription = "Technical Solution Company set up to provide and render a working solution to different Establishment, with efficient installation or repair of refrigerators, electrical works, generators, lifts, painting services, etc..";
 
   const teamPictureUrl =  "/public/assets/Images/reception.png";
+
+
+
 
   // Create JSON-LD schema for the home page
   const homeSchema = {
@@ -37,32 +41,45 @@ export default function HomePage () {
 
   return (
     <div>
-
+      <div style={{width: "100%", padding: "0 15px", borderRadius: "5px" }}>
       <HomeSlider />
+
+
+      </div>
      
     
 
       {/* About Section */}
       <div className="about-section">
-          <div className="about-featured jumbotron my-5 container-fluid">
-            <h3 className="display-4">Our Story </h3>
-            <p className="lead "> <span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span> : is a Technical Solution Company set up to provide 
-                and render a working solution to different Establishment, Organization, Company and industry.
-                 For every success is a matter of time and we are Time so we are very optimistic with our 
-                 potential. To avoid mistakes, errors, delays, and excuses from individual workers, even 
-                 extra  expenses, then <span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span> is here to excuse any excuses in delivering quality, timely and excellent work. Every project has its challenges, so we target it on time. Our team of Engineers and Technicians are reliable and ready for the work from the starting to completion, and operation.  
+          <div className="about-featured jumbotron my-5 container-fluid ">
+            <h2 className="text-start">Your Requirement is Our Service </h2>
+            <p className="lead text-bold"> Are you the representative of multinational company, or a government agency, a technical rep of a company? No matter what you do, you can take advantage of our services at <span style={{color:"blue", fontWeight: "bold"}}>Tech</span><span style={{color:"green", fontWeight:"bold"}}>Par </span>.
+                  
             </p>
+            <p className="lead text-bold"> To take your business struggling position, average position, or wherever you are
+               right now to where you have dreamed of, our services will come in handy. Whatever the challenges you may be facing, 
+               the bottle necks you want to fix, just bring us in. We shall take your company from where you are to where you have desired.
+               
+                  
+            </p>
+            <p className="lead text-bold"> You can simply do that by browsing though the <span style={{color:"blue", fontWeight: "bold"}}>Tech</span><span style={{color:"green", fontWeight:"bold"}}>Par </span>.
+              website and finding a service you need.    
+                  </p>
             
             
             
-            <p className="lead">
+            <p className="lead text-end">
               <CustomButton calltoaction={"More about us"} onClick={() => navigate("/about")}/>
             </p>
         </div>
 
         <div className="team1-pics">
-          <img src="./assets/Images/reception.jpeg" alt="T-time global team members at work" />
+          {/* <img src="./assets/Images/reception.jpeg" alt="T-time global team members at work" /> */}
 
+          <video width="100%" height="" style={{borderRadius: "10px"}} controls>
+                        <source src="/public/assets/video/advideo.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
         </div>
 
 
@@ -73,13 +90,13 @@ export default function HomePage () {
       {/* Core Values */}
       <div className="value-section">
       <div className="team2-pics">
-          <img src="./assets/Images/fieldsupervisor.jpg" alt="T-time global team member at work" />
+          <img src="https://innov8tiv.com/wp-content/uploads/2017/05/Aiivon-123.jpg" alt="T-time global team member at work" />
         
             
 
         </div>
       <div className="value-featured">
-        <h3 className="text-center mb-4">Company Ethos</h3>
+        <h3 className="text-center mb-4">About <span style={{color:"blue", fontWeight: "500"}}>Tech</span><span style={{color:"green", fontWeight: "500"}}>Par </span></h3>
       <div className="accordion p-4 w-80 mx-auto" id="accordionExample">
       
 
@@ -92,7 +109,7 @@ export default function HomePage () {
     </h2>
     <div id="goalTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
     <div className="accordion-body">
-      Our goal is to contribute to the success of every of our client to meet their target. Every contract carried out by T-Time we shoulder the responsibility and give out the timely completion.
+      Our goal is to help every business out their to scale, grow, and achieve objectives through our strategic services.
     </div>
     </div>
   </div>
@@ -108,8 +125,8 @@ export default function HomePage () {
     </h2>
     <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      <span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span> our aim is given the best perfectly, reducing the cost and maintaining the standard.
-
+      <span style={{color:"blue", fontWeight: "500"}}>Tech</span><span style={{color:"green", fontWeight: "500"}}>Par </span> seeks to be one of the top tech service provisioning companies in the world
+      
       </div>
     </div>
   </div>
@@ -121,7 +138,7 @@ export default function HomePage () {
     </h2>
     <div id="missionThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      <p style={{textAlign: "left"}}> <span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span>: Mission is to be a:</p>
+      <p style={{textAlign: "left"}}> <span style={{color:"blue", fontWeight: "500"}}>Tech</span><span style={{color:"green", fontWeight: "500"}}>Par </span>: Mission is to be a:</p>
         <p style={{textAlign: "left"}}>‥Solution in your Company </p>
         <p style={{textAlign: "left"}}>‥Success in your establishment</p>
         <p style={{textAlign: "left"}}>‥Standard in your services</p>
@@ -133,22 +150,6 @@ export default function HomePage () {
   </div>
 
   {/* adding */}
-<div className="accordion-item">
-    <h2 className="accordion-header">
-      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#purposeTwo" aria-expanded="false" aria-controls="purposeTwo">
-      Purpose
-      </button>
-    </h2>
-    <div id="purposeTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-    <div className="accordion-body">
-    <span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span>: we are answerable to technical works with better finishing, making it perfect, also putting it in place for better services.
-    </div>
-    </div>
-  </div>
-  
-  
-
-
 
   <div className="accordion-item">
     <h2 className="accordion-header">
@@ -158,7 +159,7 @@ export default function HomePage () {
     </h2>
     <div id="valueTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      <span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span>:  We are zero excuses company with an experience and qualify personnel put together for Timely Solution and quality works.
+      <span style={{color:"blue", fontWeight: "500"}}>Tech</span><span style={{color:"green", fontWeight: "500"}}>Par </span>:  We are zero excuses company with an experience and qualify personnel put together for Timely Solution and services.
 
 
       </div>
@@ -172,7 +173,7 @@ export default function HomePage () {
     </h2>
     <div id="whatTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-      We are into industrial and domestic <Link to="/services/electrical-installation" style={{color: ""}}>Electrical-wiring</Link>, installation of Elevator (Lift), <Link to="/services/air-conditioning-system" style={{color: ""}}>Air Conditioner (Ac)</Link>, with maintenance, we carry out repairs & services of <Link to="/services/refrigerator-maintenace" style={{color: ""}}>Refrigerator (Fridge)</Link>, <Link to="/services/generator-maintenance" style={{color: ""}}>Generator</Link>, and <Link to="/services/painting-services" style={{color: "green"}}>Painting works</Link>. We are also into Consultancy.
+      We are into service rendering such as <Link to="/services/web%20development" style={{color: ""}}>Web Development</Link>, <Link to="/services/Data%20Analytics" style={{color: ""}}>Data Analytics</Link>, <Link to="/services/graphics-design" style={{color: ""}}>Graphics Design</Link>, <Link to="/services/vsat" style={{color: ""}}>Vsat and fast internet services</Link>, and <Link to="/services/web-hosting" style={{color: "green"}}>Web Hosting</Link>. We are also into Consultancy.
 
 
       </div>
@@ -225,26 +226,15 @@ export default function HomePage () {
     </div>
 
     <p className="text-center mt-4">
-      Ready to experience the <Link to="/portfolio"><span style={{color:"red"}}>T-Time</span> <span style={{color:"green"}}>Nigeria Global </span> difference</Link>? 💡 <strong onClick={()=> navigate("/contact")} style={{cursor:"pointer"}}>Contact us today!</strong>
+      Ready to experience the <Link to="/portfolio"><span style={{color:"blue", fontWeight: "bold"}}>Tech</span><span style={{color:"green"}}>Star</span> difference</Link>? 💡 <strong onClick={()=> navigate("/contact")} style={{cursor:"pointer"}}>Contact us today!</strong>
     </p>
   </section>
 
-  <section className="testimonials-section mt-4 mb-4">
-      <div className="container">
+  <section className="testimonials-section mt-4 mb-4 ">
+      <div className="container bb-light">
         <h2 className="text-center mb-4">What Our Clients Say</h2>
-        <div className="row">
-          {testimonialData.map((testimonial) => (
-            <div key={testimonial.id} className="col-md-4 mb-4">
-              <div className="testimonial-card">
-                <p className="testimonial-message">{testimonial.message}</p>
-                <div className="testimonial-author">
-                  <p className="author-name fw-bold">{testimonial.name}</p>
-                  <p className="author-position">{testimonial.position}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+       
+        <TestimonialSlider />
       </div>
     </section>
 

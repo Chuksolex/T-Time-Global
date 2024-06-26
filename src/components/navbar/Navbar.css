@@ -9,3 +9,21 @@
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: green;
 }
+
+.reqquote{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.team{
+    display: flex;
+}
+.team img{
+    max-width: 40px;
+    max-height: 30px;
+    border-radius: 100%;
+    opacity: 1;
+    margin-right: -3px;
+}

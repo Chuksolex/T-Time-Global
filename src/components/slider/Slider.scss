@@ -1,6 +1,8 @@
 .image-slider{
     text-align: center;
     background-color: rgba(29, 40, 194, 0.459); /* Dark background color */
+    width: 100%;
+   
 
 
     img{ 
@@ -14,7 +16,7 @@
         }
       }
     .quotebutton {
-        background-color: RGB(25, 135, 84);
+        background-color: blue;
         color: white;
         font-weight: 700;
         padding: 0.5rem 1rem;
@@ -22,25 +24,26 @@
         border: none;
         position: absolute;
         bottom: 1rem;
+        :hover:active{
+            background-color: green   }
+                  
+    
+    
     }
 }
 
 .header{
-    background-color: RGB(25, 135, 84);
+    background-color: blue;
     margin: 0;
     color: rgb(245, 238, 238);
     font-size: 1.8rem;
     padding: 0.5rem;
     
+    
+}
 
-
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
-    // color: white;
-    // font-size: 2.6rem;
-    // z-index: 1;
+.slick-prev:before, .slick-next:before {
+    color: blue;
 }
 
 
@@ -53,21 +56,15 @@
             height: 15rem;
         }
         .quotebutton {
-            // background-color: RGB(25, 135, 84);
-            // color: white;
-            // font-weight: 700;
-            // padding: 0.5rem 1rem;
-            // border-radius: .5rem;
-            // border: none;
-            // position: absolute;
-            // bottom: 1rem;
+            
 
 
             position: absolute;
             bottom: 20px;
+            background-color: blue;
+            :hover:active{background-color: green;}
             left: 50%;
             transform: translateX(-50%);
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
             color: white;
             border: none;
             padding: 10px 20px;
@@ -75,9 +72,7 @@
             z-index: 1;
             transition: background-color 0.3s ease;
         }
-        .quotebutton:hover {
-            background-color: rgba(0, 0, 0, 0.7); /* Darken the background color on hover */
-          }
+        
     }
     
   }
@@ -128,4 +123,6 @@
 //       background-color: rgba(0, 0, 0, 0.7); /* Darken the background color on hover */
 //     }
 //   }
-  
+ .quotebutton :hover{
+    background-color: green;
+ }
