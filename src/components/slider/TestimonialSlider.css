@@ -1,7 +1,7 @@
 .testimonial-slider-container {
     position: relative;
     width: 100%;
-    
+    overflow-x: auto;
     white-space: nowrap;
     padding-bottom: 40px; /* to show the dots */
   }
@@ -49,5 +49,22 @@
   .author-position {
     font-size: 12px;
     color: #666;
+  }
+
+
+
+  .testimonial-slider-container {
+    margin: 0 auto;
+    max-width: 900px; /* Adjust max-width based on your design */
+  }
+  
+  .testimonial-slide {
+    padding: 0 10px; /* Adjust padding as needed */
+  }
+
+  @media screen and (max-width: 768px) {
+    .testimonial-slide {
+      padding: 0; /* Remove padding on smaller screens */
+    }
   }
   
