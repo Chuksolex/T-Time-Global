@@ -3,8 +3,7 @@ import HomeSlider from "../../components/slider/HomeSlider";
 import CustomButton from "../../components/customButton/CustomButton";
 import { useNavigate, Link } from "react-router-dom";
 import "./Home.scss";
-import { testimonialData } from "../../components/data/testimonialdata.js";
-import TestimonialSlider from "../../components/slider/testimonialSlider.jsx";
+import TestimonialSlider from "../../components/slider/TestimonialSlider";
 
 
 
