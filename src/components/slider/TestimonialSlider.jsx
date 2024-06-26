@@ -10,22 +10,28 @@ const TestimonialSlider = () => {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     swipeToSlide: true,
     responsive: [
         {
           breakpoint: 1024, // Adjust breakpoints as needed
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
           },
         },
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
           },
         },
+        {
+            breakpoint: 420,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
       ],
   };
 

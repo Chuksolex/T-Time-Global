@@ -11,7 +11,7 @@ export const testimonialData = [
       name: 'Jane Ubong',
       position: 'Home-Owner',
       message:
-        'I recently hired TechStar for my business structuring. The team was professional, and the system they recommended has made a significant difference in the comfort of my company approach to data and insight. Thank you for your excellent service!',
+        'I recently hired TechStar for my business structuring. The team was professional, and the system they recommended has made a significant difference...!',
     },
     {
       id: 3,
@@ -25,7 +25,7 @@ export const testimonialData = [
       name: 'Nnadozie Ibe',
       position: 'Business Owner',
       message:
-        'When I consulted TechStar, their approach was professional and smooth. They paid attention to my requirement',
+        'When I consulted TechStar, their approach was professional and smooth.',
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ export const testimonialData = [
       name: 'Robert Ebuka Simeon',
       position: 'Business Owner',
       message:
-        'The elevator work provided by Olat Grow Ventures in partnership with T-Time Nigeria Global is great and beautiful, and timely in completion. Very impressive!',
+        'The contract work provided by Olat TechPar is great and beautiful, and timely in completion.',
     },
     {
       id: 3,

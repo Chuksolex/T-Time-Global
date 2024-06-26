@@ -1,14 +1,14 @@
 .testimonial-slider-container {
     position: relative;
     width: 100%;
-    overflow-x: auto;
     white-space: nowrap;
     padding-bottom: 40px; /* to show the dots */
+    margin: 0 auto;
   }
   
   .slick-slide {
     display: inline-block;
-    width: calc(100% / 3); /* Adjust according to the slidesToShow value */
+    width: calc(100%/4); /* Adjust according to the slidesToShow value */
     box-sizing: border-box;
     padding: 10px;
   }
@@ -18,10 +18,14 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 0 5px; 
+    text-align: justify;
+    /* height: 300px; */
+
   }
   
   .testimonial-card {
-    background-color: skyblue;
+    background-color: lightblue;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -32,7 +36,9 @@
     line-height: 1.5;
     margin-bottom: 15px;
     text-wrap: wrap;
-    word-wrap: break-word;
+    /* word-wrap: break-word; */
+    text-align: left;
+    min-height: 200px;
   }
   
   .testimonial-author {
@@ -51,16 +57,6 @@
     color: #666;
   }
 
-
-
-  .testimonial-slider-container {
-    margin: 0 auto;
-    max-width: 900px; /* Adjust max-width based on your design */
-  }
-  
-  .testimonial-slide {
-    padding: 0 10px; /* Adjust padding as needed */
-  }
 
   @media screen and (max-width: 768px) {
     .testimonial-slide {
