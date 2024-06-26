@@ -76,7 +76,7 @@ export default function HomePage () {
           {/* <img src="./assets/Images/reception.jpeg" alt="T-time global team members at work" /> */}
 
           <video width="100%" height="" style={{borderRadius: "10px"}} controls>
-                        <source src="/public/assets/video/advideo.mp4" type="video/mp4" />
+                        <source src="/assets/video/advideo.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
         </div>
